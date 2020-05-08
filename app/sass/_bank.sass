@@ -1,0 +1,842 @@
+.bank
+    &-bg
+        background: url("../img/bank-bg.png") center no-repeat
+        background-size: cover
+        width: 100%
+        height: 100vh
+        display: flex
+        align-items: center
+        justify-content: center
+        .atm-choose
+            .bank-close
+                width: 68px
+                height: 68px
+                display: none
+                justify-content: center
+                align-items: center
+                margin-top: 66px
+                flex-direction: column
+                border-radius: 10px
+                background-color: rgba(68, 145, 18, 0.25)
+                transition: .4s ease
+                position: absolute
+                bottom: 66px
+                left: -50px
+                transform: translate(-50%, 0)
+                cursor: pointer
+                padding: 0
+                &:hover
+                    background: #449112
+                span
+                    color: #ffffff
+                    font-family: 'Gilroy-Medium'
+                    font-size: 9px
+                    font-weight: 300
+                    padding-top: 8px
+                    letter-spacing: 0.18px
+                .close-icon
+                        background: url(../img/bank-close.png) center no-repeat
+                        background-size: contain
+                        width: 24px
+                        height: 24px
+
+            &.blured-menu
+                .bank-close
+                    display:flex !important
+            position: relative
+            display: flex
+            flex-flow: row nowrap
+            align-items: stretch
+            height: 100%
+            .card
+                display: inline-block
+                padding: 6px
+                padding-bottom: 8px
+                border-radius: 8px
+                margin-bottom: 17px
+                &.active 
+                    border: 1px solid rgba(255, 255, 255, .5)
+                    .card-img
+                        background: url(../img/bank-card-black.png) center no-repeat
+                .card-text
+                    font-size: 14px
+                    color: rgba(255, 255, 255, .5)
+                    font-family: 'Gilroy-Regular'
+                    padding-left: 12px
+                    letter-spacing: 0.02em
+                .card-img
+                    background: url(../img/bank-card.png) center no-repeat
+                    background-size: cover
+                    width: 218px
+                    height: 138px
+                    margin-bottom: 6px
+            &>div
+                width: 50%
+                height: 100%
+                padding-top: 72px
+                padding-left: 79px
+            .atm-choose-title
+                font-size: 14px
+                font-family: 'Gilroy-Medium'
+                color: #000
+                font-weight: 500
+                margin-bottom: 15px
+                padding-left: 19px
+                letter-spacing: 0.02em
+            .atm-choose-left
+            .atm-choose-right
+                background-color: #59b41d
+                .atm-choose-title
+                    color: #fff
+        .bank-missing
+            display: flex
+            flex-flow: column nowrap
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            height: 100%
+            background-color: #59b41d
+            border-radius: 35px
+            padding: 45px 40px 62px 40px
+            text-align: center
+            .missing-top-img
+                display: inline-block
+                height: 15px
+                width: 55px
+                background: url('../img/bank-logo.svg') center no-repeat
+                background-size: cover
+                margin-bottom: 1px
+            .missing-top-text
+                font-family: 'Gilroy-Medium'
+                font-size: 6px
+                letter-spacing: .5em
+                color: #fff
+            .missing-middle
+                color: #fff
+                max-width: 450px
+                letter-spacing: 0.02em
+                margin-top: 34px
+                .missing-middle-title
+                    font-size: 22px
+                    font-family: 'Gilroy-Bold'
+                    margin-bottom: 25px
+                .missing-middle-text
+                    font-size: 16px
+                    font-family: 'Gilroy-Regular'
+                    font-weight: 100
+                    line-height: 25px
+            .missing-bottom-btn
+                width: 120px
+                height: 45px
+                font-size: 12px
+                font-family: 'Gilroy-Regular'
+                padding-left: 36px
+                padding-top: 17px
+                background-color: #4da214
+                border-radius: 5px
+                color: #fff
+                background: #4da214 url('../img/bank-close.png') 22px 10px no-repeat
+                cursor: pointer
+                transition: background-color .3s
+                &:hover
+                    background-color: #57c60d
+        .bank-content
+            width: 935px
+            height: 679px
+            border-radius: 50px
+            background-color: #141414
+            position: relative
+            display: flex
+            justify-content: center
+            padding-top: 28px       
+            .bank-main
+                width: 879px
+                height: 560px
+                display: flex
+                border-radius: 35px
+                background-color: #ffffff
+                position: relative
+                .bank-section
+                    width: 100% 
+                    .bank-group 
+                        display: flex
+                        padding: 37px 37px 43px 21px
+                        justify-content: space-between
+                    .bank-history
+                        padding: 15px 37px 68px 21px
+                        display: flex 
+                        justify-content: space-between
+                        .innerit
+                            width: 100%
+                        .bank-much
+                            width: 95%   
+                            flex: 0 0 45%  
+                            overflow-y: auto 
+                            height: 150px
+                            &::-webkit-scrollbar
+                                width: 3px;
+                                border-radius: 5px
+                            /* Track */
+                            &::-webkit-scrollbar-track
+                                background: #f1f1f1;
+
+                            /* Handle */
+                            &::-webkit-scrollbar-thumb
+                                background: #59b41d
+                            /* Handle on hover */
+                            &::-webkit-scrollbar-thumb:hover
+                                background: #59b41d
+                        .title 
+                            color: #000000;
+                            font-family: "Gilroy-Bold"
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 28px;
+                            letter-spacing: 0.32px;
+                            padding-left: 40px
+                            padding-bottom: 14px
+                        .bank-div
+                            display: flex
+                            align-items: center       
+                            .bank-time 
+                                color: rgba(#000000,0.3)
+                                font-family: "Gilroy-Medium"
+                                font-size: 10px;
+                                font-weight: 500;
+                                line-height: 28px;
+                                letter-spacing: 0.2px;
+                            .bank-infor
+                                display: flex
+                                margin-left: 16px
+                                justify-content: space-between
+                                flex: 0 0 280px 
+                                padding: 10px 0
+                                max-width: 280px
+                                border-bottom: 1px solid #eeeeee
+                                &.top
+                                    border-top: 1px solid #eeeeee
+                                .subhead
+                                    color: #000000;
+                                    font-family: "Gilroy-Medium"
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 28px;
+                                    letter-spacing: 0.32px;
+                                .money
+                                    color: #59b41d;
+                                    font-family: "Gilroy-Bold"
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 28px;
+                                    letter-spacing: 0.32px;
+                                    &.red
+                                        color: #c91111;
+
+                    .bank-widget
+                        width: 275px
+                        flex: 0 0 275px
+                        .cards
+                            background: url("../img/bank-card.png") center no-repeat
+                            background-size: cover
+                            width: 100%
+                            height: 173px
+                        .inners
+                            display: flex
+                            justify-content: space-between
+                            margin-top: 30px
+                            align-items: center
+                            .balance
+                                color: #389b38
+                                font-family: "Gilroy-Medium"
+                                font-size: 14px
+                                font-weight: 500
+                                line-height: 28px
+                                letter-spacing: 0.28px 
+                            .price
+                                color: #000000
+                                font-family: "Gilroy-Bold"
+                                font-size: 20px
+                                font-weight: 700
+                                letter-spacing: 0.4px
+                    .bank-sum
+                        position: relative
+                        text-align: center
+                        padding-left: 41px
+                        &.mod
+                            padding: 0
+                        .bank-link
+                            height: 48px;
+                            border-radius: 10px;
+                            padding: 0 25px
+                            background-color: #59b41d;
+                            color: #ffffff;
+                            font-family: "Gilroy-Medium";
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 33.6px;
+                            border: none
+                            letter-spacing: 0.33px;
+                            position: relative
+                            top: 33px
+                            transition: .4s ease
+                            &:hover
+                                background-color: #449112
+                        .section
+                            display: flex
+                            justify-content: center
+                            .inner
+                                flex: 0 0 45%
+                                text-align: left
+                                max-width: 45%
+                                display: flex;
+                                margin-top: 30px
+                                flex-direction: column;
+                                justify-content: center;    
+
+                                label
+                                    color: #878787;
+                                    font-family: "Gilroy-Regular"
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 28px;
+                                    letter-spacing: 0.28px;
+                                    padding-left: 21px
+                                input
+                                    color: #000000
+                                    font-family: "Gilroy-Bold"
+                                    font-size: 21px
+                                    font-weight: 400
+                                    height: 48px            
+                                    width: 90%
+                    
+                                    border-radius: 10px
+                                    border: 1px solid #e3e3e3
+                                    background-color: #ffffff
+                                    line-height: 33.6px
+                                    letter-spacing: 0.36px
+                                    position: relative
+                                    padding-left: 20px
+                                    transition: .4s ease
+                                    &:focus
+                                        border-color: #59b41d
+
+                        .title
+                            color: #000000;
+                            font-family: "Gilroy-Bold";
+                            font-size: 22px;
+                            font-weight: 400;
+                            white-space: nowrap;
+                            line-height: 33.6px;
+                            letter-spacing: 0.37px;
+                        .desc
+                            color: #000000;
+                            font-family: "Gilroy-Regular";
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 33.6px;
+                            letter-spacing: 0.27px;
+                        .bank-sublead
+                            color: rgba(#000000,0.3)
+                            font-family: "Gilroy-Regular"
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            letter-spacing: 0.41px;
+                            text-align: left
+                            padding: 10px 0 0 19px
+                        .block
+                            margin-top: 55px
+                            input
+                                color: #000000
+                                font-family: "Gilroy-Bold"
+                                font-size: 21px
+                                font-weight: 400
+                                height: 49px            
+                                width: 95%
+                                border-radius: 10px
+                                border-top-right-radius: 0px
+                                border-bottom-right-radius: 0px
+                                border: 1px solid #e3e3e3
+                                background-color: #ffffff
+                                line-height: 33.6px
+                                letter-spacing: 0.36px
+                                position: relative
+                                padding-left: 20px
+                                transition: .4s ease
+                                &:focus
+                                    border-color: #59b41d
+                            button
+                                width: 49px
+                                height: 49px
+                                color: #ffffff
+                                position: absolute
+                                right: 0
+                                font-family: "Gilroy-Medium"
+                                font-size: 20px
+                                font-weight: 400
+                                line-height: 33.6px
+                                text-transform: uppercase
+                                letter-spacing: 0.36px
+                                border-radius: 10px
+                                border: none
+                                background-color: #59b41d
+                                transition: .4s ease
+                                &:hover
+                                    background: #449112
+                .bank-exit
+                    background: url("../img/bank-exit.svg") center no-repeat
+                    background-size: cover
+                    width: 32px
+                    height: 32px
+                    position: absolute
+                    right: -10px
+                    top: -10px
+                    z-index: 100
+                    transition: .3s ease
+                    cursor: pointer
+                    &:hover
+                        transform: scale(1.04)
+                .bank-more
+                    padding: 37px 33px 0 33px
+                    width: 100% 
+                    position: relative
+                    .bank-card
+                        position: absolute
+                        left: 50%   
+                        top: 159px
+                        border-radius: 10px
+                        background-color: #f9f9f9
+                        text-align: center
+                        padding: 46px 51px
+                        transform: translate(-50%,0)
+                        &.bank-mod
+                            padding: 42px 29px 41px 29px
+                        .bank-btn
+                            height: 48px
+                            border-radius: 10px
+                            background-color: #59b41d
+                            padding: 0  25px
+                            display: block
+                            margin: 35px auto 0
+                            line-height: 48px
+                            color: #ffffff
+                            font-family: "Gilroy-Medium"
+                            font-size: 20px
+                            font-weight: 400
+                            border: none
+                            letter-spacing: 0.33px
+                            transition: .4s ease
+                            &:hover
+                                background-color: #449112
+                        .lead
+                            color: #000000
+                            font-family: "Gilroy-Bold"
+                            font-size: 22px
+                            font-weight: 400
+                            white-space: nowrap
+                            line-height: 33.6px
+                            letter-spacing: 0.37px
+                        .sublead
+                            color: #000000
+                            font-family: "Gilroy-Regular"
+                            font-size: 16px
+                            font-weight: 400
+                            line-height: 33.6px
+                            letter-spacing: 0.27px
+                        form
+                            display: flex
+                            margin-top: 40px
+                            align-items: center
+                            position: relative
+                            .bank-blocks
+                                display: flex
+                                width: 100%
+                                align-items: center
+                                .bank-box
+                                    width: 200px
+                                    text-align: left
+                                    &.right
+                                        margin-right: 35px
+                                    label
+                                        color: #878787
+                                        font-family: 'Gilroy-Regular'
+                                        font-size: 14px
+                                        line-height: 28px
+                                        padding-left: 21px
+                                        display: block  
+                                        padding-bottom: 10px
+                                        letter-spacing: 0.28px
+                                    input
+                                        border-radius: 10px
+                                        width: 100%
+                            .bank-input
+                                color: #000000
+                                font-family: "Gilroy-Bold"
+                                font-size: 21px
+                                font-weight: 400
+                                height: 49px
+                                width: 90%
+                                border-radius: 10px
+                                border-top-right-radius: 0px
+                                border-bottom-right-radius: 0px
+                                border: 1px solid #e3e3e3
+                                background-color: #ffffff
+                                line-height: 33.6px
+                                letter-spacing: 0.36px
+                                position: relative
+                                padding-left: 20px
+                                transition: .4s ease
+                                &:focus
+                                    border-color: #59b41d
+                            .bank-button
+                                width: 49px
+                                height: 49px
+                                color: #ffffff
+                                position: absolute
+                                right: 0
+                                font-family: "Gilroy-Medium"
+                                font-size: 20px
+                                font-weight: 400
+                                line-height: 33.6px
+                                text-transform: uppercase
+                                letter-spacing: 0.36px
+                                border-radius: 10px
+                                border: none
+                                background-color: #59b41d
+                                transition: .4s ease
+                                &:hover
+                                    background: #449112
+                    .bank-outlet
+                        display: flex
+                        justify-content: space-between
+                        padding: 39px 0 0 20px
+                    .bank-information
+                        display: flex
+                        justify-content: space-between
+                        margin-top: 64px
+                        .bank-items 
+                            margin: 0
+                        .bank-inners
+                            flex: 0 0 226px
+                            max-width: 226px
+                        .bank-side
+                            position: relative
+                            .line
+                                content: ""
+                                display: block
+                                width: 100%
+                                margin: 17px 0 39px
+                                height: 1px
+                                display: block
+                                background-color: #e8e8e8
+                            .bank-price
+                                color: #000000
+                                font-family: "Gilroy-Bold"
+                                font-size: 24px
+                                font-weight: 700
+                                display: inline-block
+                                line-height: 28px
+                                letter-spacing: 0.48px
+                            .bank-order
+                                height: 48px
+                                color: #ffffff
+                                font-family: "Gilroy-Medium"
+                                font-size: 20px
+                                font-weight: 400
+                                display: inline-block
+                                margin-left: 23px
+                                line-height: 33.6px
+                                padding:  0 30px
+                                border: none
+                                letter-spacing: 0.33px
+                                border-radius: 10px
+                                background-color: #59b41d
+                                transition: .4s ease
+                                &:hover
+                                    background: #449112
+
+                    .bank-cards
+                        display: grid
+                        margin-top: 52px
+                        grid-template-columns: 1fr 1fr 1fr
+                        justify-content: space-between
+                        grid-column-gap: 17px
+                    .bank-out
+                        display: flex
+                        justify-content: space-between
+                        .bank-outter
+                            display: flex
+                            align-items: center
+                            .bank-cash
+                                margin-left: 19px
+                                padding: 15px 20px 14px 18px
+                                border-radius: 10px
+                                background-color: #f9f9f9
+                                .bank-cost
+                                    color: #389b38
+                                    font-family: 'Gilroy-Medium'
+                                    font-size: 13px
+                                    font-weight: 500
+                                    letter-spacing: 0.28px
+                                .bank-number
+                                    color: #000000
+                                    font-family: 'Gilroy-Bold'	
+                                    font-size: 19px
+                                    padding-top: 8px
+                                    font-weight: 700
+                                    letter-spacing: 0.4px
+                        .bank-group
+                            display: flex
+                            align-items: center
+                            .bank-avatar
+                                width: 79px
+                                flex: 0 0 79px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                height: 79px
+                                background-color: #59b41d
+                                color: #389b38
+                                font-family: 'Gilroy-Bold'	
+                                border-radius: 50%
+                                font-size: 35px
+                                font-weight: 700
+                                margin-right: 19px
+                                text-transform: uppercase
+                                letter-spacing: 0.88px
+                            .bank-info
+                                .title
+                                    color: #000000
+                                    font-family: "Gilroy-Medium"
+                                    font-size: 20px
+                                    font-weight: 400
+                                    letter-spacing: 0.4px
+                                    padding-bottom: 6px
+                                .subtitle
+                                    color: rgba(#000000,0.3)
+                                    font-family: "Gilroy-Regular"
+                                    font-size: 12px
+                                    font-weight: 400
+                                    letter-spacing: 0.24px
+                .bank-tab
+                    border-top-left-radius: 35px
+                    border-bottom-left-radius: 35px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    background-color: #59b41d
+                    flex: 0 0 100px
+                    &.blured
+                        filter: blur(5px)
+                    .logotype
+                        background: url("../img/bank-logo-small.svg") center no-repeat
+                        background-size: cover
+                        width: 48px
+                        height: 14px
+                        display: block
+                        margin-top: 34px
+                        .desc
+                            color: #f5f6fa
+                            font-family: 'Gilroy-Medium'
+                            font-size: 6px
+                            font-weight: 500
+                            line-height: 30px
+                            text-align: center
+                            padding-top: 7px
+                            text-transform: uppercase
+                            letter-spacing: 3px
+                    .bank-menu
+                        margin-top: 43px
+                        position: relative
+                        height: 100%    
+                        ul
+                            list-style-type: none
+                            padding: 0
+                            margin: 0
+                            li
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                flex-direction: column
+                                width: 68px
+                                height: 68px
+                                margin-bottom: 10px
+                                cursor: pointer
+                                &:hover
+                                    border-radius: 10px
+                                    background-color: #449112
+                                &.active
+                                    border-radius: 10px
+                                    background-color: #449112
+                                .icon
+                                    display: block
+                                    width: 26px
+                                    height: 26px
+                                    &.first
+                                        background: url("../img/bank-icon-1.svg") center no-repeat
+                                        background-size: contain
+                                    &.second
+                                        background: url("../img/bank-icon-2.svg") center no-repeat
+                                        background-size: cover
+                                    &.third
+                                        background: url("../img/bank-icon-3.svg") center no-repeat
+                                        background-size: contain
+                                    &.four
+                                        background: url("../img/bank-icon-4.svg") center no-repeat
+                                        background-size: contain
+
+                                .desc       
+                                    color: #ffffff
+                                    font-family: 'Gilroy-Medium'
+                                    font-size: 9px
+                                    font-weight: 300
+                                    padding-top: 8px
+                                    letter-spacing: 0.18px
+                    .bank-card
+                        width: 68px
+                        height: 68px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin-top: 66px
+                        flex-direction: column
+                        border-radius: 10px
+                        background-color: rgba(#449112,0.25)
+                        transition: .4s ease
+                        position: absolute
+                        bottom: 144px
+                        left: 50%
+                        transform: translate(-50%,0)
+                        cursor: pointer
+                        &.active
+                            background-color: #449112
+                        &:hover
+                            background: #449112
+                        .card-icon
+                            background: url("../img/bank-icon-card.png") center no-repeat
+                            background-size: contain
+                            width: 24px
+                            height: 24px
+                        span
+                            color: #ffffff
+                            font-family: 'Gilroy-Medium'
+                            font-size: 9px
+                            font-weight: 300
+                            padding-top: 8px
+                            letter-spacing: 0.18px
+
+                    .bank-close
+                        width: 68px
+                        height: 68px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin-top: 66px
+                        flex-direction: column
+                        border-radius: 10px
+                        background-color: rgba(#449112,0.25)
+                        transition: .4s ease
+                        position: absolute
+                        bottom: 66px
+                        left: 50%
+                        transform: translate(-50%,0)
+                        cursor: pointer
+                        &:hover
+                            background: #449112
+                        .close-icon
+                            background: url("../img/bank-close.png") center no-repeat
+                            background-size: contain
+                            width: 24px
+                            height: 24px
+                            &.back
+                                background: url("../img/bank-back.png") center no-repeat
+                                background-size: contain
+
+                        span
+                            color: #ffffff
+                            font-family: 'Gilroy-Medium'
+                            font-size: 9px
+                            font-weight: 300
+                            padding-top: 8px
+                            letter-spacing: 0.18px
+
+
+            .logo
+                background: url("../img/bank-logo.svg") center no-repeat
+                background-size: cover
+                width: 114px
+                height: 34px
+                position: absolute
+                left: 87px
+                bottom: 32px
+            .bank-area
+                display: flex
+                position: absolute
+                bottom: 30px
+                right: 58px
+                .bank-block
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 140px
+                    height: 34px
+                    margin-left: 26px
+                    border-radius: 5px
+                    background-color: #222121
+                    .linear
+                        width: 104px
+                        height: 6px
+                        border-radius: 2px
+                        background-color: #171616
+.bank-items
+    height: 66px
+    border-radius: 10px
+    width: 100%
+    display: flex     
+    justify-content: center
+    align-items: center
+    background-color: #59b41d
+    color: #ffffff
+    font-family: "Gilroy-Medium"
+    font-size: 16px
+    font-weight: 400
+    line-height: 28px
+    cursor: pointer
+    line-height: 20px
+    text-align: center
+    margin-bottom: 39px
+    letter-spacing: 0.32px
+    position: relative
+    transition: .4s ease
+    &:hover
+        background-color: #449112
+    span
+        position: absolute
+        z-index: 10
+        top: -12px
+        left: 15px
+        border-radius: 10px
+        background-color: #ffffff
+        color: #59b41d
+        font-family: "Gilroy-Medium"
+        font-size: 12px
+        font-weight: 400
+        line-height: 23px
+        padding: 0 10px
+        letter-spacing: 0.24px
+.bank-person
+    display: flex
+    align-items: center
+    padding-bottom: 7px
+    .title
+        font-size: 16px
+        font-weight: 500
+        white-space: nowrap
+        line-height: 32px
+        font-family: "Gilroy-Bold"
+    span
+        font-size: 16px
+        font-weight: 500
+        line-height: 32px
+        font-family: "Gilroy-Regular"
+        padding-left: 4px   

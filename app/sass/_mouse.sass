@@ -1,0 +1,162 @@
+.mouse
+    &-bg
+        background: url("../img/mouse-bg.png") center no-repeat
+        background-size: cover
+        width: 100%
+        height: 100vh
+        position: relative      
+        .mouse-button
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-50%,-50%)
+            width: 480px
+            height: 80px
+            border-radius: 5px
+            color: #ffffff
+            display: flex
+            text-decoration: none
+            justify-content: center
+            align-items: center
+            border: none
+            font-family: "Gilroy-Bold"
+            font-size: 36px
+            font-weight: 700
+            letter-spacing: 1.1px
+
+            &.success
+                background-color: #62c045
+                z-index: 10
+                position: relative
+                &:after
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 384px
+                    height: 20px
+                    bottom: -20px
+                    border-radius: 5px
+                    border-top-left-radius: 0px
+                    border-top-right-radius: 0px
+                    background-color: rgba(#62c045,0.6)
+                &:before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 307px
+                    height: 20px
+                    bottom: -40px
+                    border-radius: 5px
+                    border-top-left-radius: 0px
+                    border-top-right-radius: 0px
+                    background-color: rgba(#62c045, 0.35)
+            &.lose
+                background-color: #c03139
+                z-index: 10
+                position: relative
+                &:after
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 384px
+                    height: 20px
+                    bottom: -20px
+                    border-radius: 5px
+                    border-top-left-radius: 0px
+                    border-top-right-radius: 0px
+                    background-color: rgba(#c03139,0.6)
+                &:before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 307px
+                    height: 20px
+                    bottom: -40px
+                    border-radius: 5px
+                    border-top-left-radius: 0px
+                    border-top-right-radius: 0px
+                    background-color: rgba(#c03139, 0.35)
+
+        .mouse-content
+            position: absolute
+            left: 50%
+            transform: translate(-50%,0)
+            top: 223px  
+            .circle
+                background: url("../img/mouse-circle.png") center no-repeat
+                background-size: cover
+                width: 747px
+                height: 282px 
+                .line
+                    width: 2px
+                    height: 120px
+                    background-color: #ffffff
+                    opacity: 0.8 
+                    position: absolute
+                    left: 50%
+                    top: -10px
+                    display: block
+                    transform: translate(-50%,0) 
+                .percent
+                    background: url("../img/mouse-percent-bg.png") center no-repeat
+                    background-size: cover
+                    width: 60px
+                    height: 60px
+                    color: #ffffff
+                    position: absolute
+                    left: 50%
+                    top: 173px  
+                    transform: translate(-50%,0) 
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    .number
+                        font-family: "Gilroy-Bold"
+                        font-size: 18px
+                        font-weight: 400
+                        line-height: 30px
+                        letter-spacing: 0.36px
+                .button 
+                    height: 36px
+                    padding: 0 30px 
+                    border-radius: 5px
+                    background-color: rgba(#62c045,0.8)
+                    color: #ffffff
+                    font-family: "Gilroy-Bold"
+                    font-size: 16px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    cursor: pointer
+                    position: absolute
+                    left: 50%
+                    top: 173px  
+                    transform: translate(-50%,0) 
+                    font-weight: 400
+                    line-height: 30px
+                    border: none
+                    letter-spacing: 0.32px
+                    transition: .3 ease
+                    &:hover 
+                        background-color:   #4CAF50
+
+        .mouse-item
+            display: flex
+            position: absolute
+            left: 50%
+            transform: translate(-50%,0)
+            bottom: 60px
+            .icon
+                background: url("../img/mouse-item.svg") center no-repeat
+                background-size: cover
+                width: 23px
+                height: 33px
+            .text
+                color: #ffffff
+                font-family: 'Gilroy-Medium'
+                font-size: 17px
+                font-weight: 400
+                margin-left: 13px
+                line-height: 24px
+                letter-spacing: 0.44px
+

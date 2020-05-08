@@ -1,0 +1,34 @@
+extends templates/layout
+
+block main
+    .mobile
+        .mobile-item
+            .mobile-bg.taxi
+                .mobile-container
+                    .mobile-row
+                        .mobile-inner
+                            a(href="").mobile-exit
+                                img(src="img/mobile-road-arrow.svg", alt="mobile-arrow-back")
+                                .mobile-text.gray Назад
+                    .mobile-taxiclient
+                        .mobile-taxiclient-logo <span class="mobile-taxiclient-logo-bold">Taxi</span> Client
+                        .mobile-taxiclient-text Выберите класс такси
+                    .mobile-taxi-dest
+                        .mobile-taxi-dest__text Пункт назначения:
+                        .mobile-taxi-dest__title Нэвис-авеню
+                        .mobile-taxi-dest__dist Дистанция: 1,38 км.
+                        .mobile-taxi-dest__list
+                            ul
+                                li.mobile-taxi-dest__item
+                                    .mobile-taxi-dest__item-name Эконом
+                                    .mobile-taxi-dest__item-price-text Цена
+                                    .mobile-taxi-dest__item-price $240
+                                li.mobile-taxi-dest__item
+                                    .mobile-taxi-dest__item-name Премиум
+                                    .mobile-taxi-dest__item-price-text Цена
+                                    .mobile-taxi-dest__item-price $320
+                                li.mobile-taxi-dest__item
+                                    .mobile-taxi-dest__item-name Люкс
+                                    .mobile-taxi-dest__item-price-text Цена
+                                    .mobile-taxi-dest__item-price $425
+                        .mobile-taxi-dest__accept-btn Подтвердить

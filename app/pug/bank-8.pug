@@ -1,0 +1,51 @@
+extends templates/layout
+
+block main
+    .bank
+        .bank-bg
+            .bank-content
+                .bank-main
+                    .bank-exit
+                    .bank-tab
+                        .logotype
+                            .desc BANK
+                        .bank-menu
+                            ul
+                                li.active
+                                    .icon.first
+                                    .desc Пополнить
+                                li
+                                    .icon.second
+                                    .desc Перевести
+                                li
+                                    .icon.third
+                                    .desc Налоги
+                                li
+                                    .icon.four
+                                    .desc Снять
+                    .bank-more
+                        .bank-out
+                            .bank-group
+                                .bank-avatar M
+                                .bank-info
+                                    .title Maxim Temny
+                                    .subtitle  Банковский счет
+                            .bank-outter
+                                .bank-cash  
+                                    .bank-cost Наличные
+                                    .bank-number $1 323 322
+                                .bank-cash
+                                    .bank-cost На счету
+                                    .bank-number $2 142 653
+                        .bank-card
+                            .lead Пополнение банковского счета
+                            .sublead Введите сумму и нажмите “ОК”
+                            form().bank-form
+                                input(type="text").bank-input
+                                button.bank-button OK
+                .logo
+                .bank-area
+                    .bank-block
+                        .linear
+                    .bank-block
+                        .linear

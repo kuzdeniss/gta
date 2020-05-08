@@ -1,0 +1,24 @@
+*
+	box-sizing: border-box
+
+a, input, select, textarea
+	&:focus
+		outline: 0
+
+button
+	cursor: pointer
+	&:focus
+		outline: none
+h1,h2,h3,h4,h5,h6
+	margin: 0
+	padding: 0
+input
+	overflow: auto !important
+html
+	+md
+		font-size: .9rem
+	+sm
+		font-size: .8rem
+body
+	font-size: 1rem
+	font-family: 'MullerRegular'

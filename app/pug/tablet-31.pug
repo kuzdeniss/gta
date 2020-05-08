@@ -1,0 +1,57 @@
+extends templates/layout
+
+block main
+    .tablet
+        .tablet-bg.orange
+            
+            .tablet-tab.orange
+                .logo.sheriff
+                .menu
+                    ul
+                        li.orange
+
+                                .tablet-subtitle Сотрудники
+                                .tablet-subdesc.orange Изменить статус
+                        li.active.orange
+
+                                .tablet-subtitle Выдача штрафов
+                                .tablet-subdesc.orange Имя и Фамилия / ID
+                        li.orange
+
+                                .tablet-subtitle Выдача звезд
+                                .tablet-subdesc.orange Имя и Фамилия / ID
+                        li.orange
+
+                                .tablet-subtitle Вызовы
+                                .tablet-subdesc.orange &nbsp
+                                .tablet-notification.orange 8
+                        li.orange
+
+                                .tablet-subtitle Поиск гражданина
+                                .tablet-subdesc.orange Имя и Фамилия / ID
+                        li.orange
+
+                                .tablet-subtitle Запросить помощь
+                                .tablet-subdesc.orange &nbsp
+            .tablet-content
+                .tablet-container
+                    .tablet-block       
+                        .tablet-more
+                            .tablet-head Los Santos
+                            .tablet-head Police Department
+                            .tablet-text База данных
+                        a(href="").tablet-link.orange
+                            .tablet-subtext Новость штата
+                            .tablet-date.orange 30.08.19 / 20;42
+                    .tablet-title.orange Выдача штрафов
+                    form().tablet-form
+                        .tablet-groups
+                            .tablet-label.orange Имя и Фамилия / ID
+                            input(type="text",placeholder="Имя и Фамилия / ID").orange
+                        .tablet-groups
+                            .tablet-label.orange Причина
+                            textarea(type="text",placeholder="Причина").orange
+                        .tablet-groups
+                            .tablet-label.orange Сумма
+                            input(type="text",placeholder="Сумма").orange
+                        button.orange Выписать штраф

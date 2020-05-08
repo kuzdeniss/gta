@@ -1,0 +1,58 @@
+.area
+    &-content
+        max-width: 1300px
+        display: flex
+        justify-content: center
+        +xl
+            max-width: 1100px   
+        .area-item
+            height: 430px
+            width: 100%
+            padding: 86px 75px 71px 75px
+            background: url("../img/area-bg.png") center no-repeat
+            +xl 
+                padding: 86px 65px 70px 65px
+        .area-indent
+            margin: 0 50px  
+            +xl
+                margin: 0 20px
+        .area-title
+            font-size: 20px
+            line-height: 20px
+            text-align: center
+            font-family: 'MullerBold'
+            color: #FFFFFF
+            &:after
+                content: ""
+                display: block
+                width: 45px
+                height: 4px
+                background: #EF3B3B
+                box-shadow: 0px 5px 35px #EC3A3A
+                margin: 23px auto 32px
+
+        .area-text
+            font-size: 14px
+            line-height: 16px
+            text-align: center
+            font-family: 'MullerMedium'
+            color: #817E7E
+            max-width: 75%
+            margin: 0 auto
+
+        button.area-button
+            width: 250px
+            height: 65px
+            background: #F63C3C
+            display: flex
+            align-items: center
+            justify-content: center
+            font-family: 'MullerBold'
+            border: none
+            font-size: 14px
+            color: #FFFFFF
+            margin-top: 40px
+            box-shadow: 0px 10px 65px rgba(178, 44, 44, 0.45)
+            transition: .4s ease
+            &:hover
+                background: #c32626

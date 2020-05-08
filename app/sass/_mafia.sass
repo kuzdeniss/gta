@@ -1,0 +1,356 @@
+.mafia
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100vh
+    &-bg
+        display: grid
+        grid-template-columns: 1fr 1fr
+        height: 730px
+        width: 1200px
+        .mafia-item  
+            .mafia-block
+                height: 50%
+                padding: 60px
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                justify-content: space-between
+                .title
+                    color: #ffffff;
+                    font-family: "Lehmann-Egyptian";
+                    font-size: 55px;
+                    font-weight: 500;
+                    letter-spacing: 6.5px;
+                .desc
+                    color: rgba(#cacaca,0.65)
+                    font-family: "Lehmann-Egyptian";
+                    font-size: 28px;
+                    font-weight: 500;
+                    letter-spacing: 3.5px;
+                .price
+                    color: #ffffff;
+                    font-family: "Lehmann-Egyptian";
+                    font-size: 100px;
+                    font-weight: 500;
+                    letter-spacing: 3.5px;
+                &.violet
+                    background-color: #2f0854
+                &.green
+                    background-color: #18332c
+                &.gray
+                    background-color: #101110
+                &.yellow
+                    background-color: #181819
+                &.orange
+                    background-color: #191613;
+                &.sal
+                    background-color: #295b18
+                &.blue
+                    background-color: #0b1b43
+            .mafia-inner
+                height: 50%
+                padding: 60px
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                justify-content: space-between
+                &.violet
+                    background-color: #621aa7
+                &.yellow
+                    background-color: #f4cf16
+                &.sal
+                    background-color: #74e40a
+                &.gray
+                    background-color: #3d3d3d
+                &.blue  
+                    background-color: #185ac1
+                &.orange  
+                    background-color: #e8851f
+                &.green
+                    background-color: #40781f
+                .title
+                    color: #ffffff;
+                    font-family: "Lehmann-Egyptian";
+                    font-size: 55px;
+                    font-weight: 500;
+                    letter-spacing: 6.5px;
+                .subtitle 
+                    font-family: "Lehmann-Egyptian";
+                    font-size: 28px;
+                    font-weight: 500;
+                    letter-spacing: 3.5px;
+                    &.violet
+                        color: #2f0854
+                    &.green
+                        color: #18332c;
+                    &.gray
+                        color: #101110;
+                    &.blue
+                        color: #0b1b43
+                    &.orange
+                        color: #191613;
+                button
+                    background: url("../img/mafia-button.png")  center no-repeat
+                    background-size: contain
+                    border: none
+                    z-index: 9
+                    font-family: "Lehmann-Egyptian";
+                    font-size: 30px 
+                    padding: 25px 20px
+                    font-weight: 500;       
+                    letter-spacing: 2.25px;
+                    position: relative  
+                    transition: .4s ease
+                    &.green
+                        color: #40781f;
+                    &.blue
+                        color: #185ac1
+                    &.sal
+                        background: url("../img/mafia-button-sal.png")  center no-repeat
+                        background-size: contain
+                        color: #74e40a;
+                    &.violet
+                        color:  #621aa7;
+                    &.orange
+                        color: #eda254
+                    &.yellow
+                        background: url("../img/mafia-button-dark.png")  center no-repeat
+                        background-size: contain
+                        color: #f4cf16;
+                    &:hover
+                        opacity: .9
+        .mafia-box 
+            height: 100%
+            &.violet
+                background-color: #5d199e
+            &.sal
+                background-color: #70db0b
+            &.gray
+                background-color: #3b3b3b
+            &.green
+                background-color: #3d731d
+            &.blue
+                background-color: #1656b9
+            &.yellow
+                background-color: #ecc815
+            &.orange
+                background-color: #e0801d
+            .mafia-info
+                padding: 0 60px 
+                display: flex
+                margin-bottom: 20px
+                .mafia-icon
+                    width: 85px
+                    font-size: 40px
+                    border-radius: 50%
+                    height: 85px;
+                    display: flex
+                    flex: 0 0 85px
+                    justify-content: center
+                    align-items: center
+                    font-family: "Lehmann-Egyptian";   
+                    text-transform: uppercase;
+                    position: relative 
+                    .online
+                        width: 20px;
+                        height: 20px;
+                        background-color: rgba(#61bf44,0.35)
+                        display: block
+                        bottom: 3px
+                        right: 3px  
+                        border-radius: 50%
+                        margin-left: 15px   
+                        position: absolute
+                        &:after
+                            content: ""
+                            position: absolute
+                            border-radius: 50%
+                            left: 50%
+                            top: 50%
+                            transform: translate(-50%,-50%)
+                            width: 12px;
+                            z-index: 10
+                            height: 12px;
+                            background-color: #61bf44;
+                    &.violet
+                        background-color: #6a20b1;
+                        color: #7828c4;
+                    &.sal
+                        background-color: #80eb1b;
+                        color: #93f932;
+                    &.gray
+                        background-color: #3d3d3d
+                        color: #4c4c4c;
+                    &.orange
+                        background-color: #ec8d2b;
+                        color: #f69838;
+                    &.green
+                        background-color: #498426;
+                        color: #52922c;
+                    &.yellow
+                        background-color:  #fbd827;
+                        color: #ffe459;
+                    &.blue
+                        background-color:  #1d60c9
+                        color: #2469d5
+                .mafia-icon-bg
+                    background: url("../img/tablet-setting-green.svg") center no-repeat
+                    background-size: cover
+                    height: 35px
+                    width: 35px
+                    flex: 0 0 35px
+                .much   
+                    margin-left: 10px 
+                    flex: 0 0 calc(100% - 35px - 95px)  
+                    .subtitle
+                        font-family: "Lehmann-Egyptian";   
+                        color: #ffffff;
+                        font-size: 40px;
+                        letter-spacing: 3.5px;
+                    .subdesc
+                        font-family: "Lehmann-Egyptian";
+                        font-size: 27px;
+                        font-weight: 500;
+                        letter-spacing: 2.4px;
+                        &.violet
+                            color: #2f0854;
+                        &.gray
+                            color: #101110;
+                        &.blue
+                            color: #0b1b43
+                        &.green     
+                            color: #18332c;
+            .scroll
+                height: 505px
+                overflow-x: hidden
+                overflow-y: scroll
+            .mafia-outter
+                padding: 60px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                position: relative
+                &.blue
+                    &:after
+                        content: ""
+                        display: block
+                        width: calc(100% - 120px)   
+                        height: 4px;
+                        position: absolute
+                        bottom: 40px
+                        background-color: #1d60c9
+                &.violet
+                    &:after
+                        content: ""
+                        display: block
+                        width: calc(100% - 120px)   
+                        height: 4px;
+                        position: absolute
+                        bottom: 40px
+                        background-color: #6a20b1;
+                &.yellow
+                    &:after
+                        content: ""
+                        display: block
+                        width: calc(100% - 120px)   
+                        height: 4px;
+                        position: absolute
+                        bottom: 40px
+                        background-color: #fbd827;
+                &.green
+                    &:after
+                        content: ""
+                        display: block
+                        width: calc(100% - 120px)   
+                        height: 4px;
+                        position: absolute
+                        bottom: 40px
+                        background-color: #498426;
+                &.violet
+                    &:after
+                        content: ""
+                        display: block
+                        width: calc(100% - 120px)   
+                        height: 4px;
+                        position: absolute
+                        bottom: 40px
+                        background-color: #6a20b1;
+                .mafia-player
+                    font-family: "Lehmann-Egyptian";
+                    font-size: 55px;
+                    font-weight: 500;
+                    letter-spacing: 3.5px;
+                    &.violet
+                        color: #2f0854;
+                    &.blue
+                        color: #0b1b43
+                    &.gray
+                        color: #101110;
+                    &.sal
+                        color: #295b18
+                    &.orange
+                        color: #191613;
+                    &.green
+                        color: #18332c;
+
+                .mafia-count
+                    display: flex
+                    .more
+                        display: flex   
+                        align-items: center
+                        .change
+                            font-family: "Lehmann-Egyptian";
+                            font-size: 30px;
+                            padding: 0 5px
+                            color: #ffffff
+                            font-weight: 500;
+                            letter-spacing: 3.5px;
+                        span
+                            font-family: "Lehmann-Egyptian";
+                            font-size: 55px;
+                            color: #ffffff
+                            font-weight: 500;
+                            letter-spacing: 3.5px;
+                            &.violet
+                                &.active
+                                    color: #2f0854;
+                            &.blue
+                                &.active
+                                    color: #0b1b43;
+                            &.orange
+                                &.active
+                                    color: #191613;
+                            &.sal
+                                &.active
+                                    color: #295b18
+                            &.gray
+                                &.active
+                                    color: #101110;
+                            &.yellow
+                                &.active
+                                    color: #000000
+                            &.green
+                                &.active
+                                    color: #18332c
+                    .online
+                        width: 20px;
+                        height: 20px;
+                        background-color: rgba(#61bf44,0.35)
+                        display: block
+                        position: relative
+                        border-radius: 50%
+                        margin-left: 15px   
+                        &:after
+                            content: ""
+                            position: absolute
+                            border-radius: 50%
+                            left: 50%
+                            top: 50%
+                            transform: translate(-50%,-50%)
+                            width: 12px;
+                            z-index: 10
+                            height: 12px;
+                            background-color: #61bf44;
+

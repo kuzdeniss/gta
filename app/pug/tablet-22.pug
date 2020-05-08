@@ -1,0 +1,51 @@
+extends templates/layout
+
+block main
+    .tablet
+        .tablet-bg.brown
+            
+            .tablet-tab.brown
+                .logo.fib
+                .menu
+                    ul
+                        li.brown
+                            
+                                .tablet-subtitle Сотрудники
+                                .tablet-subdesc.brown Изменить статус
+                        li.brown
+                            
+                                .tablet-subtitle Выдача штрафов
+                                .tablet-subdesc.brown Имя и Фамилия / ID
+                        li.brown
+                            
+                                .tablet-subtitle Выдача звезд
+                                .tablet-subdesc.brown Имя и Фамилия / ID
+                        li.active.brown
+                            
+                                .tablet-subtitle Вызовы
+                                .tablet-subdesc.brown &nbsp
+                                .tablet-notification.brown 8
+                        li.brown
+                            
+                                .tablet-subtitle Поиск гражданина
+                                .tablet-subdesc.brown Имя и Фамилия / ID
+                        li.brown
+                            
+                                .tablet-subtitle Запросить помощь
+                                .tablet-subdesc.brown &nbsp
+            .tablet-content
+                .tablet-container
+                    .tablet-block       
+                        .tablet-more
+                            .tablet-head Los Santos
+                            .tablet-head Police Department
+                            .tablet-text База данных
+                        .tablet-link.brown
+                            .tablet-subtext Новость штата
+                            .tablet-date.brown 30.08.19 / 20;42
+                    .tablet-title.brown Поиск помощь / 
+                        span.brown автомобиля
+                    form().tablet-search
+                        .tablet-boxes
+                            input(type="text",placeholder="Имя Фамилия / ID").tablet-input.brown
+                            button.brown Поиск    

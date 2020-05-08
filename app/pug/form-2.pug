@@ -1,0 +1,41 @@
+extends templates/layout
+
+block main
+    .main
+        .profile-create(style="height: 700px;")
+            h4.profile-titles Создание персонажа
+            .profile-subtext
+                p Художественная видимость монотонно начинает стиль, однако само по себе состояние игры всегда амбивалентно.
+            .profile-block
+                .profile-text
+                    p ИМЯ
+                .profile-desc
+                    p НИКИТА
+
+            .profile-block
+                .profile-text
+                    p ФАМИОИЯ
+                .profile-desc
+                    p ЗОТОВ
+            .profile-block
+                .profile-text
+                    p ВОЗРАСТ
+                .swiper-container.profile-slider--small
+                    .swiper-wrapper
+                        .swiper-slide   
+                            .profile-desc.text-c
+                                p 23 ЛЕТ
+                        .swiper-slide   
+                            .profile-desc.text-c
+                                p 25 ЛЕТ
+                    img(src="img/arrow-right.svg", alt="arrow-right").profile-arrow--right
+                    img(src="img/arrow-left.svg", alt="arrow-left").profile-arrow--left
+            .profile-block
+                .profile-text
+                    p ОРИЕНТАЦИЯ    
+                .profile-desc
+                    p ГЕТЕРО
+            .profile-enter
+                button.profile-button.profile-button--right ПРОДОЛЖИТЬ
+                button.profile-btn ОТМЕНИТЬ
+            a(href="").profile-back Назад

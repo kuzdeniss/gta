@@ -1,0 +1,1343 @@
+.tablet
+    background: #ffffff
+    display: flex
+    justify-content: center 
+    align-items: center
+    height: 100vh
+    width: 100%
+    &-bg
+        min-width: 900px
+        height: 750px
+        width: 1194px          
+        border-radius: 22px
+        display: flex
+        position: relative
+        .tablet-logo
+            position: absolute
+            bottom: 45px
+            left: 50%
+            z-index: 999
+        &.greens    
+            &:after
+                content: "" 
+                display: block
+                position: absolute
+                left: -5px                           
+                z-index: 5  
+                top: -10px      
+                width: calc(100% + 13px)   
+                height: 105%               
+                background: url("../img/tablet-bg-green.png") center no-repeat
+        &.brown
+            &:after
+                content: "" 
+                display: block
+                position: absolute
+                left: -5px                           
+                z-index: 5  
+                top: -10px      
+                width: calc(100% + 13px)   
+                height: 105%                  
+                background: url("../img/tablet-bg-brown.png") center no-repeat
+        &.coral
+            &:after
+                content: "" 
+                display: block
+                position: absolute
+                left: -5px                           
+                z-index: 5  
+                top: -10px      
+                width: calc(100% + 13px)   
+                height: 105%                    
+                background: url("../img/tablet-coral-bg.png") center no-repeat
+        &.orange
+            &:after
+                content: "" 
+                display: block
+                position: absolute
+                left: -5px                           
+                z-index: 5  
+                top: -10px      
+                width: calc(100% + 13px)   
+                height: 105%               
+                background: url("../img/tablet-bg-orange.png") center no-repeat
+        
+        &:after
+            content: "" 
+            display: block
+            position: absolute
+            left: -5px                           
+            z-index: 5  
+            top: -10px      
+            width: calc(100% + 13px)   
+            height: 105%               
+            background: url("../img/tablet-bg.png") center no-repeat
+            background-size: contain
+            // background-size: cover           
+            // content: "" 
+            // display: block
+            // position: absolute
+            // left: -16px
+            // z-index: 5
+            // top: -20px
+            // width: 103.1%
+            // height: 105.3%          
+            // background: url("../img/tablet-bg.png") center no-repeat
+            // background-size: cover
+        &.coral
+            background-color: #1b9793
+        &.orange
+            background-color: #9f6e32
+        &.blue
+            background-color: #0f1633
+        &.green
+            background-color: #154c2c
+        &.brown
+            background-color: #161616
+        .tablet-content
+            flex: 0 0 calc(100% - 400px)
+            z-index: 10
+            +xl
+                flex: 0 0 70%
+
+            .tablet-table
+                display: block
+                width: calc(100% + 11px)
+                +xl
+                    width: 100%
+                .tablet-searching
+                    padding-left: 65px
+                    margin-top: -30px
+                .tablet-scroll
+                    height: 290px
+                    overflow-x: hidden
+                    overflow-y: auto
+                .scroll
+                    height: 270px
+                    overflow-x: hidden
+                    overflow-y: auto
+
+                .desc
+                    color: #ffffff
+                    font-family: "MullerLight"
+                    font-size: 25px
+                    font-weight: 400
+                    letter-spacing: 1.25px
+                    &.first
+                        flex: 0 0 50%
+                        padding: 33px 0
+                .number
+                    color: #ffffff
+                    font-family: "MullerLight"
+                    font-size: 25px
+                    font-weight: 400
+                    span
+                        font-family: "MullerMedium"
+
+                    &.first
+                        flex: 0 0 50%
+                        padding: 33px 0
+                .tablet-searching 
+                    color: #ffffff
+                    font-family: "MullerRegular"
+                    font-size: 25px
+                    padding-bottom: 20px
+                    font-weight: 400
+                    span
+                        font-family: "MullerBold"
+                .tablet-blocks
+                    display: flex
+                    align-items: center
+                    // justify-content: space-between
+                    padding-bottom: 19px
+                    padding-left: 65px
+                    .title
+                        color: #134e9b
+                        font-family: "MullerLight"
+                        font-size: 19px
+                        text-align: left
+                        font-weight: 400
+                        letter-spacing: 1px
+                        white-space: nowrap
+                        &.orange
+                            color: #d6a05d
+                        &.coral
+                            color: #21b7b2
+                        &.green
+                            color: #dfb614
+                        &.dark
+                            color: #2f3b6c
+                        &.brown
+                            color: #3D3D3D
+                        &.first
+                            flex: 0 0 45%
+                        &.second
+                            flex: 0 0 27%
+                        &.three
+                            flex: 0 0 20%
+                            text-align: right
+                        &.four
+                            flex: 0 0 27%       
+                        &.five
+                            flex: 0 0 28%
+                        &.six
+                            flex: 0 0 30%
+                        &.seven
+                            flex: 0 0 10%
+                        &.eight
+                            flex: 0 0 50%
+                .tablet-more
+                    display: flex
+                    width: 100%
+                    position: relative
+                    overflow: hidden
+                    padding: 0 60px 0 65px
+                    left:       
+                    align-items: center
+                    cursor: pointer
+                    &.orange
+                        &:hover
+                            background-color: #a57438
+                        &:after
+                            content: ""
+                            display: block
+                            position: absolute
+                            bottom: 0
+                            width: 100%
+                            border-bottom: 1px solid  #ab7839
+                        &:before
+                            content: ""
+                            display: block
+                            position: absolute
+                            top: 0
+                            width: 100%
+                            border-top: 1px solid  #ab7839
+                    &.coral
+                        &:hover
+                            background-color: #1a928e
+
+                        &:after
+                            content: ""
+                            display: block
+                            position: absolute
+                            bottom: 0
+                            width: 100%
+                            border-bottom: 1px solid  #1b9e9a
+                        &:before
+                            content: ""
+                            display: block
+                            position: absolute
+                            top: 0
+                            width: 100%
+                            border-top: 1px solid  #1b9e9a
+                    &.green
+                        &:hover
+                            background-color: rgb(29, 109, 63)
+
+                        &:after
+                            content: ""
+                            display: block
+                            position: absolute
+                            bottom: 0
+                            width: 100%
+                            border-bottom: 1px solid  #175531
+                        &:before
+                            content: ""
+                            display: block
+                            position: absolute
+                            top: 0
+                            width: 100%
+                            border-top: 1px solid  #175531
+                    &.brown
+                        &:hover
+                            background-color: #1E1E1E
+
+                        &:after
+                            content: ""
+                            display: block
+                            position: absolute
+                            bottom: 0
+                            width: 100%
+                            border-bottom: 1px solid  #222222
+                        &:before
+                            content: ""
+                            display: block
+                            position: absolute
+                            top: 0
+                            width: 100%
+                            border-top: 1px solid  #222222
+
+                    &:hover
+                        background-color: #101838
+                    &:after
+                        content: ""
+                        display: block
+                        position: absolute
+                        bottom: 0
+                        width: 100%
+                        border-bottom: 1px solid #151e41
+                    &:before
+                        content: ""
+                        display: block
+                        position: absolute
+                        top: 0
+                        width: 100%
+                        border-top: 1px solid #151e41
+
+                    .tablet-items
+                        padding: 15px 0
+                        &.first
+                            flex: 0 0 50%
+                            max-width: 50%
+                        &.second
+                            flex: 0 0 25%
+                            max-width: 25%
+                        &.three
+                            flex: 0 0 25%
+                            max-width: 25%
+                        &.four
+                            flex: 0 0 30%
+                            max-width: 30%
+                        &.five
+                            flex: 0 0 30%
+                            max-width: 30%
+                        &.six
+                            flex: 0 0 26%
+                            max-width: 26%
+                        &.seven
+                            flex: 0 0 10%
+                            max-width: 10%
+                        button 
+                            width: 109px
+                            color: #0f1633
+                            font-family: "MullerRegular"
+                            font-size: 18px
+                            font-weight: 400
+                            white-space: nowrap
+                            border: none
+                            letter-spacing: 0.9px
+                            height: 41px
+                            border-radius: 5px
+                            background-color: #61bf44
+                            &.orange
+                                background-color: #e4ab64
+                                color: #7f5a2c
+                                &:hover
+                                    background-color: rgba( #e4ab64,.95  )
+                            &.coral
+                                background-color: #ffffff
+                                color: #1b9793
+                                &:hover
+                                    background-color: rgba(#ffffff,.95  )
+
+                            &.info
+                                width: 91px
+                                height: 41px
+                                color: #ffffff
+                                margin-left: 20px
+                                border-radius: 5px
+                                &.dark
+                                    background-color: #151e41
+                                    &:hover
+                                        background: #134e9b
+                        .tablet-subtext
+                            color: #ffffff
+                            font-family: "MullerLight"
+                            font-size: 22px
+                            font-weight: 400
+                            letter-spacing: 1.25px
+                            +xl
+                                white-space: nowrap
+                                font-size: 18px
+                        .tablet-name
+                            font-family: "MullerBold"
+                            font-size: 22px
+                            font-weight: 400
+                            letter-spacing: 1.5px
+                            &.orange
+                                color: #e4ab64
+                            &.blue
+                                color: #134e9b
+                            &.coral
+                                color: #18dcd5
+                            &.brown
+                                color: #5A5A5A
+                            &.green
+                                color: #f9cb16
+                        .tablet-setting
+                            background: url("../img/tablet-setting-blue.png") center no-repeat
+                            width: 35px
+                            cursor: pointer
+                            height: 35px
+                            background-size: cover
+                            margin-left: auto
+                            display: block
+
+                            &.brown
+                                background: url("../img/tablet-setting-brown.png") center no-repeat
+                                background-size: cover
+                            
+                            &.green
+                                background: url("../img/tablet-setting-green.svg") center no-repeat
+                                background-size: cover
+
+                        .tablet-inform
+                            display: flex
+                            align-items: center
+                            .tablet-subtitle
+                                color: #ffffff
+                                padding-left: 25px
+                                font-family: "MullerLight"
+                                font-size: 22px
+                                font-weight: 400
+                                letter-spacing: 1.5px
+                            .tablet-avatar
+                                width: 60px
+                                height: 60px
+                                font-family: "MullerBold"
+                                font-size: 27px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                border-radius: 50%
+                                font-weight: 400
+                                text-transform: uppercase
+                                letter-spacing: 1.5px
+                                position: relative
+                                &.blue
+                                    background-color: #151e41
+                                    color: #243062
+                                &.orange
+                                    background-color: #97672c
+                                    color: #8c5f27
+                                &.coral 
+                                    background-color: #1ca09c
+                                    color: #11938f
+                                &.brown
+                                    color: #404040
+                                    background-color: #252525
+
+                                &.green
+                                    background-color: #134628
+                                    color: #0f3b21
+                                .online
+                                    width: 16px
+                                    height: 16px
+                                    border-radius: 50%
+                                    position: absolute
+                                    bottom: 5px
+                                    right: 2px
+                                    background-color: rgba(#8cd376,.3)
+                                    &:after
+                                        content: ""
+                                        border-radius: 50%
+                                        display: block
+                                        width: 10px
+                                        height: 10px
+                                        position: absolute
+                                        background-color: #61bf44
+                                        left: 50%
+                                        top: 50%
+                                        transform: translate(-50%,-50%)
+
+            .tablet-container
+                padding: 60px 35px 40px 65px
+        
+                .tablet-cabinet
+                    &.flex
+                        display: flex
+                        flex-direction: column
+                        height: 460px
+                        justify-content: space-between
+                        .tablet-indent
+                            margin-bottom: 35px
+                    &.before
+                        &:before
+                            content: ""
+                            display: block
+                            border-top: 1px solid #151e41
+                            margin-bottom: 40px
+                        &.orange
+                            &:before
+                                content: ""
+                                display: block
+                                border-top: 1px solid #ab7839
+                                margin-bottom: 40px
+                        &.coral
+                            &:before
+                                content: ""
+                                display: block
+                                border-top: 1px solid #1b9e9a
+                                margin-bottom: 40px
+                        &.brown
+                            &:before
+                                content: ""
+                                display: block
+                                border-top: 1px solid #1F1F1F
+                                margin-bottom: 40px
+                    .tablet-div
+                        display: flex
+                        position: relative
+                        top: -20px
+                        .button
+                            width: 100%
+                            margin-right: 32px
+                            color: #ffffff
+                            font-family: "MullerMedium"
+                            font-size: 22px
+                            font-weight: 400
+                            letter-spacing: 0.5px
+                            height: 57px
+                            border: none
+                            border-radius: 10px
+                            background-color: #134e9b
+                            transition: .3s ease
+
+                            &.brown
+                                background: #5A5A5A
+                                &:hover
+                                    background: #222222
+                            
+                            &.orange
+                                background-color: #d6a05d
+                                &:hover
+                                    background: rgba(#d6a05d,.9)
+                            
+                            &.blue
+                                &:hover
+                                    background: #151e41
+                        .btn
+                            width: 100%
+                            color: #ffffff
+                            font-family: "MullerMedium"
+                            font-size: 22px
+                            font-weight: 400
+                            letter-spacing: 0.5px
+                            height: 57px
+                            border: none
+                            border-radius: 10px
+                            transition: .3s ease
+                            background-color: #134e9b
+                            &.orange
+                                background-color: #d6a05d
+                                &:hover
+                                    background: rgba(#d6a05d,.9)
+                            &.brown
+                                background: #5A5A5A
+                                &:hover
+                                    background: #222222
+                            &.blue
+                                &:hover
+                                    background: #151e41
+                    .tablet-searching 
+                        color: #ffffff
+                        font-family: "MullerRegular"
+                        font-size: 25px
+                        padding-bottom: 20px
+                        font-weight: 400
+                        span
+                            font-family: "MullerBold"
+                    .tablet-indent
+                        margin-top: 5px   
+                        overflow-x: auto
+                        height: 200px       
+                        .tablet-problem
+                            padding-top: 14px
+                            color: #ffffff
+                            white-space: nowrap
+                            font-family: "MullerMedium"
+                            font-size: 21px
+                            letter-spacing: 1.25px  
+                            span
+                                color: #ffffff
+                                font-size: 21px
+                                font-family: "MullerLight"
+                                letter-spacing: 1.25px
+                    .tablet-out
+                        display: flex
+                        justify-content: space-between
+                        .tablet-side
+                            display: flex   
+                            +xl
+                                flex-direction: column
+                                align-items: flex-end
+                            .tablet-btn
+                                width: 214px
+                                height: 41px
+                                color: #ffffff
+                                display: flex
+                                margin-right: 29px
+                                border: none    
+                                justify-content: center
+                                align-items: center
+                                font-family: "MullerRegular"
+                                font-size: 18px
+                                font-weight: 400
+                                letter-spacing: 0.9px
+                                border-radius: 5px
+                                transition: .3s ease
+                                background-color: #134e9b
+                                +xl
+                                    margin-right: 0
+                                    margin-bottom: 10px
+                                &.orange
+                                    background-color: #6e4b20
+                                    color: #ffffff
+                                    &:hover
+                                        background-color: rgba(#6e4b20,.9)
+                                        border: none
+                                &.brown
+                                    background-color: #5a5a5a
+                                    color: #ffffff
+                                    &:hover
+                                        background-color: #252525
+                                &.coral
+                                    background-color: #18dcd5
+                                    color: #ffffff  
+                                    &:hover
+                                        background-color: #1fcfc9
+                                &:hover
+                                    background: #11417e
+                            .tablet-btns
+                                width: 109px
+                                height: 41px
+                                border-radius: 5px
+                                color: #0f1633
+                                border: none
+                                font-family: "MullerRegular"
+                                font-size: 18px
+                                font-weight: 400
+                                letter-spacing: 0.9px
+                                background-color: #61bf44
+                                transition: .3 ease
+                                &.orange
+                                    background-color:  #e4ab64 
+                                    color: #7f5a2c
+                                    &:hover
+                                        background-color: rgba(#e4ab64,.95)
+                                &.coral
+                                    background-color: #ffffff  
+                                    color: #1b9793
+                                    &:hover
+                                        background-color: rgba(#ffffff,.95)
+                                &:hover
+                                    background: #4fe720
+                        .tablet-inners
+                            display: flex
+                            align-items: center
+
+                            .info
+                                display: flex
+                                flex-direction: column
+                                justify-content: space-between
+                                padding-left: 30px
+                                position: relative
+                                flex: 0 0 200px
+                                .more
+
+                                .tablet-indents
+                                    position: absolute
+                                    top: 140px
+                                    .tablet-problem
+                                        padding-top: 12px
+                                        color: #ffffff
+                                        white-space: nowrap
+                                        font-family: "MullerMedium"
+                                        font-size: 25px
+                                        letter-spacing: 1.25px
+                                        span
+                                            color: #ffffff
+                                            font-size: 25px
+                                            font-family: "MullerLight"
+                                            letter-spacing: 1.25px
+                            .tablet-icon
+                                width: 100px
+                                height: 100px  
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                border-radius: 50%
+                                font-family: "MullerBold"
+                                font-size: 45px
+                                font-weight: 400
+                                text-transform: uppercase
+                                letter-spacing: 2.25px
+                                flex: 0 0 100px 
+                                &.orange
+                                    color: #8c5f27
+                                    background-color: #97672c
+                                &.coral
+                                    color: #18837f
+                                    background-color: #19928e
+                                &.blue
+                                    color: #243062
+                                    background-color: #151e41
+                                &.brown
+                                    color: #404040
+                                    background-color: #252525
+                            .tablet-phone
+                                color: #ffffff
+                                font-family: "MullerMedium"
+                                font-size: 27px
+                                font-weight: 400
+                                letter-spacing: 1.5px
+                                &.coral
+                                    &.after
+                                        display: flex
+                                        &:after
+                                            content: ""
+                                            display: block
+                                            background: url("../img/tablet-coral-phone.png") center no-repeat
+                                            width: 18px
+                                            margin-top: 4px
+                                            padding-left: 12px
+                                            height: 18px
+                                &.brown
+                                    &.after
+                                        display: flex
+                                        &:after
+                                            content: ""
+                                            display: block
+                                            background: url("../img/tablet-brown-phone.png") center no-repeat
+                                            width: 18px
+                                            margin-top: 4px
+                                            padding-left: 12px
+                                            height: 18px
+                                &.after
+                                    display: flex
+                                    &:after
+                                        content: ""
+                                        display: block
+                                        background: url("../img/tablet-phone.svg") center no-repeat
+                                        width: 18px
+                                        margin-top: 4px
+                                        padding-left: 12px
+                                        height: 18px
+
+                            .tablet-names
+                                color: #ffffff
+                                font-family: "MullerMedium"
+                                font-size: 27px
+                                font-weight: 400
+                                letter-spacing: 1.5px
+                                padding-top: 5px
+                            .tablet-dates
+                                color: #134e9b
+                                font-family: "MullerLight"
+                                font-size: 18px
+                                font-weight: 400
+                                letter-spacing: 0.9px
+                                padding-top: 16px
+                                &.brown
+                                    color: #444444
+                                &.orange
+                                    color: #e4ab64
+                                &.coral
+                                    color: #18dcd5
+                .tablet-inner
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    .tablet-btn
+                        padding: 0 50px     
+                        height: 57px
+                        color: #ffffff
+                        font-family: "MullerMedium"
+                        font-size: 22px
+                        border: none
+                        font-weight: 400
+                        letter-spacing: 0.5px
+                        border-radius: 10px
+                        transition: .4s ease
+                        &.coral
+                            background-color: #18dcd5
+                            color: #ffffff
+                            &:hover
+                                background-color: #1fcfc9
+                                border: none
+                        &.orange
+                            border: 2px solid #e4ab64
+                            background: transparent
+                            color: #ffffff
+                            &:hover
+                                background-color: rgba(#e4ab64,.9)
+                                border: 2px solid transparent
+                        &.green
+                            background-color: #f9cb16
+                            color: #000000
+                            &:hover
+                                background: #b49310
+                        &.sal
+                            background-color: #61bf44
+                            color: #000000
+                            &:hover
+                                background: #4fe720
+
+                        &.brown
+                            background-color: #5a5a5a
+                            color: #ffffff
+                            &:hover
+                                background: #252525
+                        &.blue
+                            background-color: #134e9b
+                            &:hover
+                                background: #151e41
+                        &.dark
+                            background: #151e41
+                            &:hover
+                                background: #134e9b
+                .tablet-block
+                    display: flex
+                    justify-content: space-between
+                    width: 100%
+                    .tablet-more   
+                        .tablet-head 
+                            color: #ffffff
+                            font-family: "MullerBold"
+                            font-size: 25px
+                            font-weight: 400
+                            padding-bottom: 8px
+                            letter-spacing: 1.6px
+                        .tablet-text
+                            color: rgba(#ffffff,.8)
+                            padding-top: 6px
+                            font-family: "MullerLight"
+                            font-size: 20px
+                            font-weight: 400
+                            letter-spacing: 1px
+                    .tablet-link
+                        width: 250px
+                        height: 79px
+                        text-decoration: none
+                        display: flex
+                        justify-content: center
+                        padding-left: 34px  
+                        flex-direction: column
+                        border-radius: 10px
+                        border: 2px solid #072f62
+                        &.orange
+                            border: 2px solid  #bb8e57
+                        &.green
+                            border: 2px solid #1b6339
+                        &.coral
+                            border: 2px solid #43c3be
+                        &.brown
+                            border: 2px solid #2F2F2F
+                        .tablet-subtext     
+                            color: #ffffff
+                            font-family: "MullerMedium"
+                            font-size: 24px
+                            font-weight: 400
+                            letter-spacing: 1.2px
+                        .tablet-date  
+                            color: #3578ce
+                            font-family: "MullerLight"
+                            font-size: 14px
+                            font-weight: 400
+                            letter-spacing: 0.7px  
+                            &.green
+                                color: #f9cb16   
+                            &.coral
+                                color: #18dcd5   
+                            &.orange
+                                color: #d6a05d   
+                            &.brown
+                                color: #7F7F7F   
+                .tablet-title
+                    color: #134e9b
+                    font-family: "MullerBold"
+                    font-size: 27px
+                    font-weight: 400
+                    padding: 25px 0 25px 0  
+                    letter-spacing: 2.25px
+                    &.orange
+                        color: #d6a05d
+                    &.green
+                        color: #f9cb16
+                    &.coral
+                        color: #18dcd5
+                    &.brown
+                        color: #5A5A5A
+                    span
+                        &.blue
+                            color: rgba(#134e9b,.3)
+                        &.brown
+                            color: rgba(#5A5A5A,.3)
+                        &.orange
+                            color: rgba(#d6a05d,.3)
+                .tablet-search
+                    .tablet-group
+                        .tablet-links
+                            padding: 0 50px
+                            height: 57px
+                            border-radius: 10px
+                            background-color: #d6a05d
+                            color: #ffffff
+                            border: none
+                            font-family: "MullerMedium"
+                            font-size: 22px 
+                            margin-top: 50px
+                            font-weight: 400
+                            letter-spacing: 0.5px
+                            transition: .3s ease
+                            &:hover
+                                background: rgba(#d6a05d,.9)
+                        textarea
+                            width: 100%
+                            height: 248px
+                            background: transparent
+                            padding: 17px 0 0 27px
+                            border-radius: 10px
+                            border: 1px solid #bb8e57
+                            font-family: "MullerRegular"
+                            font-size: 23px
+                            font-weight: 400
+                            letter-spacing: 1.4px
+                            color: #ffffff
+                            &::placeholder
+                                color: rgba(#ffffff,.2)
+                        button
+                    .tablet-boxes
+                        display: flex
+                        width: 100%
+                        
+                        input
+                            font-family: "MullerRegular"
+                            font-size: 28px
+                            font-weight: 400
+                            width: 100%
+                            height: 57px
+                            border-top-left-radius: 10px
+                            padding-left: 28px
+                            background: transparent
+                            border-bottom-left-radius: 10px
+                            border: 1px solid #2f3b6c
+                            letter-spacing: 1.4px
+                            color: #ffffff
+                            &.brown
+                                border: 1px solid #4d4d4d
+                            &.orange
+                                border: 1px solid #bb8e57
+
+                            &::placeholder
+                                color: rgba(#ffffff,.2)
+                        button
+                            border: 1px solid #2f3b6c
+                            border-top-right-radius: 10px
+                            border-bottom-right-radius: 10px
+                            color: rgba(#ffffff,.2)
+                            font-family: "MullerRegular"
+                            font-size: 24px
+                            width: 130px
+                            height: 57px
+                            background: transparent
+                            font-weight: 400
+                            letter-spacing: 1.2px
+                            &.brown
+                                border-color: #4d4d4d
+                                &:hover
+                                    background-color: #2F2F2F   
+                                    border-color: #4d4d4d
+                            &.orange
+                                border-color: #bb8e57
+                                &:hover
+                                    background-color: #b27f3e 
+                                    border-color: #bb8e57
+                            &:hover
+                                background: #134e9b
+                                border-color: #134e9b
+                .tablet-form
+                    .tablet-groups
+                        margin-bottom: 21px
+                        .tablet-label
+                            color: #134e9b
+                            font-family: "MullerLight"
+                            font-size: 17px
+                            font-weight: 400
+                            padding-left: 25px
+                            letter-spacing: 1px
+                            &.brown
+                                color: #5A5A5A
+                            &.orange
+                                color: #d6a05d
+                        .tablet-star
+                            display: flex
+                            margin-top: 11px
+                            align-items: center
+                            .full
+                                background: url("../img/tablet-full-start.png") center no-repeat
+                                width: 35px
+                                height: 35px
+                                display: block
+                                margin-right: 7px
+                            .null
+                                margin-right: 7px
+                                background: url("../img/tablet-null-start.png") center no-repeat
+                                width: 35px
+                                height: 35px
+                                display: block
+                                &.brown
+                                    background: url("../img/tablet-null-brown-start.png") center no-repeat
+                                &.orange
+                                    background: url("../img/tablet-null-orange-start.png") center no-repeat
+
+                        input
+                            width: 100%
+                            background: transparent
+                            margin-top: 12px
+                            color: #ffffff
+                            font-family: "MullerMedium"
+                            font-size: 20px
+                            font-weight: 400
+                            letter-spacing: 1.5px
+                            height: 57px
+                            padding-left: 25px
+                            border-radius: 10px
+                            border: 1px solid #2f3b6c
+                            &.brown
+                                border: 1px solid #5A5A5A
+                            &.orange
+                                border: 1px solid #bb8e57
+
+                            &::placeholder
+                                color: rgba(#ffffff,.8)
+                        textarea
+                            color: #ffffff
+                            font-family: "MullerMedium"
+                            font-size: 20px
+                            margin-top: 12px
+                            resize: none
+                            width: 100%
+                            background: transparent
+                            display: block
+                            padding-top: 18px
+                            font-weight: 400
+                            letter-spacing: 1.5px
+                            padding-left: 25px
+                            border-radius: 10px
+                            border: 1px solid #2f3b6c
+                            height: 100px   
+                            border-radius: 10px
+                            border: 1px solid #2f3b6c
+                            &.orange
+                                border: 1px solid #bb8e57
+                            &.brown
+                                border: 1px solid #5A5A5A
+                            &::placeholder
+                                color: rgba(#ffffff,.8)
+                    button
+                        padding: 0 40px
+                        height: 57px
+                        border-radius: 10px
+                        background-color: #134e9b
+                        margin-top: 12px
+                        color: #ffffff
+                        font-family: "MullerMedium"
+                        font-size: 22px
+                        border: none
+                        font-weight: 400
+                        letter-spacing: 0.6px
+                        transition: .4s ease
+                        &.brown
+                            background-color: #5A5A5A
+                            &:hover
+                                background-color: #222222
+                        &.orange
+                            border: 2px solid #bb8e57
+                            background: transparent
+                            &:hover
+                                background-color: #d6a05d
+                        &:hover
+                            background: #0f51a6
+
+                .tablet-cart
+                    display: flex
+                    justify-content: space-between
+                    .cart
+                        width: 31%
+                        height: 258px
+                        border-radius: 5px
+                        cursor: pointer
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        background-color: #111111
+                        padding: 41px 22px 36px 22px
+                        position: relative
+                        transition: .3s ease
+                        border: 3px solid transparent
+
+                        .cart-title
+                            color: #ffffff
+                            font-family: "MullerMedium"
+                            font-size: 28px
+                            font-weight: 400
+                            letter-spacing: 1.6px
+                        .cart-text
+                            color: #ffffff
+                            font-family: "MullerRegular"
+                            font-size: 15px
+                            font-weight: 400
+                            line-height: 23px
+                            letter-spacing: 1.45px
+                        &.green
+                            background-color: #21b7b2
+                            &:hover
+                                border: 3px solid #1e837f
+                        &.blue
+                            background-color: #072f62
+                            &:hover
+                                border: 3px solid #0b3f81
+                            
+                        &.black
+                            &:hover
+                                border: 3px solid rgba(#ffffff,.2)
+                            background-color: #111111
+                        .cart-logo
+                            width: 55px
+                            height: 55px
+                            position: absolute
+                            bottom: -28px
+                            left: -28px
+                            &.first
+                                background: url("../img/tablet-logo-1.png") center no-repeat
+                                background-size: cover
+                            &.second
+                                background: url("../img/tablet-logo-2.png") center no-repeat
+                                background-size: cover
+                            &.three
+                                background: url("../img/tablet-logo-3.png") center no-repeat
+                                background-size: cover
+                .tablet-button
+                    padding: 0 60px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    color: rgba(#ffffff,0.65)
+                    font-family: "MullerMedium"
+                    font-size: 22px
+                    font-weight: 400
+                    border: none
+                    margin-top: 68px
+                    letter-spacing: 0.5px
+                    height: 57px
+                    border-radius: 10px
+                    background-color: #090f24
+                    transition: .3s ease
+                    &.orange
+                        border: 2px solid #bb8e57
+                        background: transparent
+                        &:hover
+                            background-color: #d6a05d
+                    &.brown
+                        background-color: #5A5A5A
+                        &:hover
+                            background-color: #222222
+                    &:hover
+                        background: #134e9b
+        .tablet-tab
+            flex: 0 0 30%
+            border-top-left-radius: 50px
+            border-bottom-left-radius: 50px
+            &.blue
+                background-color: #04244d
+            &.orange
+                background-color: #bd8948
+            &.green
+                background-color: #1d6d3f
+            &.brown
+                background-color: #222222
+            &.coral
+                background-color: #21b7b2
+            .logo
+                width: 100px
+                height: 100px
+                display: block
+                z-index: 10
+                margin: 50px 0 30px  145px
+                &.policia       
+                    background: url("../img/tablet-santos-logo.png") center no-repeat
+                    background-size: cover
+                &.medic
+                    background: url("../img/tablet-medic-logo.png") center no-repeat
+                    background-size: cover
+                &.army
+                    background: url("../img/tablet-army-logo.png") center no-repeat
+                    background-size: cover
+                &.fib
+                    background: url("../img/tablet-fib-logo.png") center no-repeat
+                    background-size: cover
+                &.sheriff
+                    background: url("../img/tablet-sheriff-logo.png") center no-repeat
+                    background-size: cover
+            .menu
+                ul
+                    list-style-type: none
+                    padding: 0
+                    margin: 0
+                    li
+                        width: 70%
+                        // margin: 0 auto 27px
+                        margin: 0 auto 27px 74px
+                        height: 62px
+                        border-radius: 10px
+                        padding-left: 35px
+                        display: flex
+                        flex-direction: column
+                        z-index: 10
+                        cursor: pointer
+                        justify-content: center
+                        background-color: #072f62
+                        position: relative
+                        border: 2px solid transparent
+                        transition: .3s ease 
+                        +xl
+                            margin: 0 auto  27px 50px
+                            padding-left: 15px
+                        .tablet-subtitle
+                            color: #ffffff
+                            font-family: "MullerMedium"
+                            font-size: 18px
+                            font-weight: 400
+                            line-height: 30px   
+                            letter-spacing: 1.2px
+                        .tablet-subdesc
+                            color: #3578ce
+                            font-family: "MullerLight"
+                            font-size: 12px
+                            line-height: 12px
+                            font-weight: 400
+                            letter-spacing: 0.7px
+                            &.coral
+                                color: rgba(#21b7b2,.6)
+                            &.orange
+                                color: #9f6e32
+                            &.white
+                                color: #ffffff
+                            &.green
+                                color: rgba(#ffffff,.6)
+                            &.brown
+                                color: #888888
+                        .tablet-notification
+                            padding: 0 13px
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            color: #ffffff
+                            position: absolute
+                            top: 50%
+                            transform: translate(0,-50%)
+                            right: 35px
+                            font-family: "MullerMedium"
+                            font-size: 17px
+                            font-weight: 400
+                            letter-spacing: 0.87px
+                            height: 34px
+                            border-radius: 5px
+                            background-color: #13407a
+                            &.orange
+                                background-color: #e3a75b
+                            &.brown
+                                background-color: #444444
+                            &.coral
+                                background-color: #1aded7
+                        
+            
+                        &.coral
+                            background-color: #1fcfc9
+                            &:hover
+                                background: rgba(#1fcfc9,.8)   
+                            &.active 
+                                background: #ffffff
+                                border: none
+                                .tablet-subtitle
+                                    &.coral
+                                        color: #21b7b2
+                                &:before
+                                    display: none
+                        &.green
+                            background-color: #23894f
+                            &:hover
+                                background: #2cbb69     
+                            &.active 
+                                border: 2px solid #26a65d
+                                &:before
+                                    content: ""
+                                    display: block
+                                    position: absolute
+                                    left: -1px
+                                    top: 0  
+                                    height: 100%
+                                    width: 6px
+                                    border-top-left-radius: 10px
+                                    border-bottom-left-radius: 10px
+                                    background: #26a65d
+                        &.orange
+                            background-color: #cf954c
+                            &:hover
+                                background: #d6a05d    
+                            &.active 
+                                border: 2px solid #f0af5e
+                                &:before
+                                    content: ""
+                                    display: block
+                                    position: absolute
+                                    left: -1px
+                                    top: 0  
+                                    height: 100%
+                                    width: 6px
+                                    border-top-left-radius: 10px
+                                    border-bottom-left-radius: 10px
+                                    background: #f0af5e
+                        &.green
+                            background-color: #23894f
+                            &:hover
+                                background: #2cbb69     
+                            &.active 
+                                border: 2px solid #26a65d
+                                &:before
+                                    content: ""
+                                    display: block
+                                    position: absolute
+                                    left: -1px
+                                    top: 0  
+                                    height: 100%
+                                    width: 6px
+                                    border-top-left-radius: 10px
+                                    border-bottom-left-radius: 10px
+                                    background: #26a65d
+                        &.brown
+                            background-color: #2F2F2F
+                            &:hover
+                                background: #282727   
+                            &.active 
+                                border: 2px solid #5A5A5A
+                                &:before
+                                    content: ""
+                                    display: block
+                                    position: absolute
+                                    left: -1px
+                                    top: 0  
+                                    height: 100%
+                                    width: 6px
+                                    border-top-left-radius: 10px
+                                    border-bottom-left-radius: 10px
+                                    background: #5A5A5A
+                        &:hover
+                            background: #073671
+                        &.active 
+                            border: 2px solid #134e9b
+                            &:before
+                                content: ""
+                                display: block
+                                position: absolute
+                                left: -1px
+                                top: 0  
+                                height: 100%
+                                width: 6px
+                                border-top-left-radius: 10px
+                                border-bottom-left-radius: 10px
+                                background: #134e9b
+                        &:last-child
+                            margin-bottom: 0
+ 

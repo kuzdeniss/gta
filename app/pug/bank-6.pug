@@ -1,0 +1,102 @@
+extends templates/layout
+
+block main
+    .bank
+        .bank-bg
+            .bank-content
+                .bank-main
+                    .bank-exit
+                    .bank-tab
+                        .logotype
+                            .desc BANK
+                        .bank-menu
+                            ul
+                                li.active
+                                    .icon.first
+                                    .desc Пополнить
+                                li
+                                    .icon.second
+                                    .desc Перевести
+                                li
+                                    .icon.four
+                                    .desc Снять
+                                .bank-close
+                                    .close-icon
+                                    span Выход
+                    .bank-section
+                        .bank-group 
+                            .bank-sum.mod
+                                .title Перевод на другие счета
+                                .desc Введите сумму и нажмите “Перевести”
+                                .section
+                                    .inner
+                                        label   Номер счета
+                                        input(type="text")
+                                    .inner
+                                        label Сумма перевода
+                                        input(type="text")
+                                button.bank-link Перевести
+
+                            .bank-widget
+                                .cards
+                                .inners
+                                    .balance  Баланс
+                                    .price $2 142 653
+                        .bank-history
+                            .innerit
+                                .title История операций
+                                .bank-much
+                                    .bank-div
+                                        .bank-time 21:30
+                                        .bank-infor.top
+                                            .subhead Пополнение
+                                            .money + $800
+                                    .bank-div
+                                        .bank-time 17:42
+                                        .bank-infor
+                                            .subhead Перевод со счета **324
+                                            .money + $50
+                                    .bank-div
+                                        .bank-time 21:30            
+                                        .bank-infor
+                                            .subhead Перевод на счет **324
+                                            .money.red - $350
+                                    .bank-div
+                                        .bank-time 21:30
+                                        .bank-infor
+                                            .subhead Перевод на счет **324
+                                            .money.red - $350
+                            .innerit            
+                                .title &nbsp
+                                .bank-much
+                                    .bank-div
+                                        .bank-time 21:30
+                                        .bank-infor.top
+                                            .subhead Снятие  
+                                            .money.red - $34 350
+                                    .bank-div
+                                        .bank-time 17:42
+                                        .bank-infor
+                                            .subhead Пополнение
+                                            .money + $8 540
+                                    .bank-div
+                                        .bank-time 21:30
+                                        .bank-infor
+                                            .subhead Пополнение
+                                            .money.red + $14 540
+                                    .bank-div
+                                        .bank-time 21:30
+                                        .bank-infor
+                                            .subhead Пополнение
+                                            .money.red + $14 540
+                                    .bank-div
+                                        .bank-time 21:30
+                                        .bank-infor
+                                            .subhead Пополнение
+                                            .money.red + $14 540
+                .logo
+                .bank-area
+                    .bank-block
+                        .linear
+                    .bank-block
+                        .linear

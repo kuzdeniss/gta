@@ -1,0 +1,262 @@
+.inventory
+    &-row
+        display: flex
+        justify-content: center
+        position: relative
+    &-box
+        text-align: center
+        height: 780px       
+        max-width: 500px
+        flex: 0 0 500px
+        margin: 0 30px
+        padding: 49px 43px 0  43px
+        position: relative 
+        box-shadow: 0px 25px 65px rgba(11, 10, 10, 0.85)
+        background: url(../img/inventory-bg.png) center  no-repeat
+        +large
+            max-width: 400px
+            padding: 40px 25px
+            height: 714px
+    &-subtitle
+        font-size: 15px
+        line-height: 16px
+        display: block
+        font-family: 'MullerBold'    
+        color: rgba(#FFFFFF,.35)
+        padding-bottom: 11px    
+    &-title
+        font-size: 15px
+        line-height: 16px
+        display: block
+        font-family: 'MullerBold'    
+        color: #FFFFFF
+    &-item
+        flex: 0 0 430px
+        max-width: 430px
+        height: 100%
+        display: flex
+        width: 100%
+        justify-content: space-between
+        flex-direction: column
+        +large
+            max-width: 360px
+            flex: 0 0 360px
+            display: block
+    &-height
+        &--large
+            height: 645px
+            +large
+                height: 580px
+        &--small
+            height: 576px
+            +large
+                height: 510px
+    &-card
+        width: 200px
+        height: 50px 
+        position: relative
+        +large
+            width: 170px
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: center 
+        margin-bottom: 20px
+    &-unit
+        width: 50px
+        height: 50px
+        flex: 0 0 50px 
+        position: absolute
+        left: 0
+        top: 0 
+        display: flex
+        justify-content: center
+        align-items: center 
+        background: #121010        
+        transition: .4s ease
+        box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+        cursor: pointer
+        &.blue
+            background: #3C7BF6 url('../img/water.svg') no-repeat center
+            box-shadow: 0px 0px 25px rgba(60, 123, 246, 0.45)
+        &.red
+            background: #F63C3C url('../img/cutlery.svg') no-repeat center
+            box-shadow: 0px 0px 25px rgba(255, 62, 62, 0.45)
+        &:hover
+            background: #000000
+            transform: translateX(2px)
+    &-aside
+        display: flex  
+        position: relative
+        background: url(../img/card-bg.png) no-repeat
+        align-items: center     
+        width: 200px
+        +large
+            width: 170px
+    &-progress
+        width: 130px
+        height: 3px
+        position: absolute
+        top: 50%
+        left: 59px
+        transform: translate(0,-50%)
+        background: #332929
+        z-index: 0
+        +large
+            width: 100px
+        &--active
+            position: absolute
+            width: 101px
+            z-index: 1
+            top: 50%
+            transform: translate(0,-50%)
+            left: 0 
+            height: 3px
+            +large
+                width: 70px
+            &.progress-blue
+                background: linear-gradient(90deg, #1D4186 3.25%, #3C7BF6 100%)
+            &.progress-red
+                background: linear-gradient(90deg, #891C1C 3.25%, #F44747 100%)
+    &-cell
+        width: 65px
+        height: 65px
+        margin-bottom: 25px
+        box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+        &.jason-icon
+            background: #121010 url('../img/jason.svg') no-repeat center
+        &.eyeglasses-icon
+            background: #F63C3C url('../img/eyeglasses.svg') no-repeat center
+        &.earrings-icon
+            background: #121010 url('../img/earrings.svg') no-repeat center
+        &.necklace-icon
+            background: #121010 url('../img/necklace.svg') no-repeat center
+        &.tie-icon
+            background: #121010 url('../img/tie.svg') no-repeat center
+        &.reee-icon
+            background: #121010 url('../img/reee.svg') no-repeat center
+        &.clock-icon
+            background: #121010 url('../img/clock.svg') no-repeat center
+        &.gloves-icon
+            background: #121010 url('../img/gloves.svg') no-repeat center
+        &.cap-icon
+            background: #121010 url('../img/cap.svg') no-repeat center
+        &.clothes-icon
+            background: #121010 url('../img/clothes.svg') no-repeat center
+        &.arm-icon
+            background: #121010 url('../img/arm.svg') no-repeat center
+        &.tshirt-icon
+            background: #121010 url('../img/tshirt.svg') no-repeat center
+        &.jogger-icon
+            background: #121010 url('../img/jogger.svg') no-repeat center
+        &.shoes-icon
+            background: #121010 url('../img/shoes.svg') no-repeat center
+        +large
+            width: 55px
+            height: 55px
+        &.active-cell
+            box-shadow: 0px 10px 35px rgba(255, 62, 62, 0.45)
+    &-person
+        padding-top: 80px
+        display: flex   
+    &-group
+        max-width: 65px
+        flex: 0 0 65px
+    &-img
+        position: relative
+        bottom: 50px
+        +large
+            width: 220px
+    &-man
+        position: relative
+        width: 272px    
+        bottom: 40px
+        background: url('../img/man.svg') no-repeat center
+        +large
+            background-size: contain !important
+            right: 7px
+    &-setting
+        font-size: 12px
+        line-height: 12px
+        font-family: 'MullerRegular'
+        color: #FFFFFF
+        position: absolute
+        bottom: -30px
+        left: 50%
+        transform: translate(-50%,0)     
+
+    &-boxes
+        width: 53px
+        height: 54px
+        background: rgba(#ffffff,.04)
+        position: relative
+        +large
+            width: 45px
+            height: 45px
+    &-number
+        width: 18px
+        height: 18px
+        position: absolute
+        bottom: -8px  
+        left: -8px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 11px
+        font-family: 'MullerBold' 
+        color: #FFFFFF
+        background: #F44747
+        border-radius: 2px
+        // margin-right: 15px
+    &-column
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        width: 100%
+        margin-bottom: 16px
+    &-content
+        margin: 20px 0     
+    &-object
+        background: url("../img/object-bg.png") no-repeat
+        padding: 30px 17px
+        margin-bottom: 18px
+        // margin-bottom: 8px
+        position: relative
+    &-access
+        margin-top: 17px
+        background: url("../img/access-bg.png") no-repeat
+        padding: 15px 17px  
+        display: flex   
+        justify-content: space-between
+        align-items: center
+        +large
+            padding: 20px
+    &-desc
+        font-family: 'MullerBold'
+        color: #ffffff
+        display: block
+        font-size: 16px
+        line-height: 16px
+        &:before
+            content: ""
+            display: inline-block
+            width: 35px
+            height: 2px
+            background: #FF3E3E
+            vertical-align: middle
+            margin-right: 11px
+
+    &-more
+        width: 203px
+        display: flex
+        position: absolute
+        top: 59%
+        left: 50%
+        z-index: 1000
+        transform: translate(-50%,-59%)
+        justify-content: space-between
+        align-items: center
+        position: relative
+        +large
+            width: 195px
+            left: 51%

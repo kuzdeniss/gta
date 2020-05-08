@@ -1,0 +1,316 @@
+.salon
+    &-bg
+        background: url("../img/salon-bg-cart.png") center no-repeat
+        background-size: cover
+        width: 100%
+        height: 100vh
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .salon-change
+            position: absolute
+            bottom: 60px
+            width: 430px   
+            left: 50%
+            transform: translate(-50%,0)
+            +xl
+                bottom: 40px
+        .salon-container
+            margin: 0 100px 
+            width: 100% 
+            +xl
+                margin: 0 20px
+            .salon-center
+                display: flex
+                height: 100vh
+                justify-content: space-between
+                align-items: center
+            .salon-boxes
+                .salon-top
+                    margin-bottom: 29px
+                    .block
+                        width: 300px
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        +xl
+                            width: 250px
+                        .desc 
+                            color: #ffffff
+                            font-family: "DINCondensed"
+                            font-size: 28px
+                            font-weight: 700
+                            letter-spacing: 0.56px
+                            +xl
+                                font-size: 24px
+                        .box
+                            display: flex
+                            align-items: center
+                            .title
+                                color: #ffffff
+                                font-family: "DINCondensed"
+                                font-size: 28px
+                                font-weight: 700
+                                letter-spacing: 0.56px
+                                +xl
+                                    font-size: 26px
+                            .text
+                                color: #ffffff
+                                font-family: "DINCondensed"
+                                font-size: 14px
+                                padding-left: 6px
+                                font-weight: 700
+                                letter-spacing: 0.28px
+                                +xl
+                                    font-size: 13px
+                    .progress
+                        width: 299px
+                        height: 5px
+                        margin: 7px 0 9px 0
+                        border-radius: 3px
+                        background-color: rgba(#020202,0.4)
+                        position: relative
+                        +xl
+                            width: 250px
+                        .linear
+                            display: block
+                            position: absolute
+                            height: 5px
+                            border-radius: 3px
+                            background-color: #ffffff
+                            top: 0
+                            left: 0
+                            &.percent-10
+                                width: 10%
+                            &.percent-20
+                                width: 20%
+                            &.percent-30
+                                width: 30%
+                            &.percent-40
+                                width: 40%
+                            &.percent-50
+                                width: 50%
+                            &.percent-60
+                                width: 60%
+                            &.percent-70
+                                width: 70%
+                            &.percent-80
+                                width: 80%
+                            &.percent-90
+                                width: 90%
+                            &.percent-100
+                                width: 100%
+                    .part
+                        display: flex
+                        justify-content: space-between
+                        span
+                            display: block
+                            &:nth-child(odd)
+                                width: 5px
+                                height: 14px
+                                border-radius: 3px
+                                background-color: #ffffff
+                            &:nth-child(even)
+                                width: 5px
+                                height: 7px
+                                border-radius: 3px
+                                background-color: #ffffff
+
+
+            .salon-details
+                .subtitle
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 40px
+                    font-weight: 700
+                    text-transform: uppercase
+                    letter-spacing: 0.87px
+                    +xl
+                        font-size: 25px
+                .title
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 120px
+                    font-weight: 700
+                    text-transform: uppercase
+                    letter-spacing: 2.4px
+                    padding-top: 10px
+                    +xl
+                        font-size: 80px
+                .price
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 80px
+                    font-weight: 700
+                    padding-top: 60px
+                    /* Text style for "600.000$" */
+                    letter-spacing: 1.74px
+                    +xl
+                        font-size: 50px
+                button
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 30px
+                    font-weight: 700
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 0 30px
+                    line-height: 52px
+                    border-radius: 5px
+                    background-color: #e34d45
+                    border: none
+                    letter-spacing: 1.5px
+                    transition: .4s ease
+                    &:hover
+                        background: #bd2921 
+                        transform: translateY(-2px)
+            .salon-pagination
+                position: absolute
+                right: 100px
+                bottom: 50px
+                display: flex
+                align-items: center
+                +xl
+                    right: 20px
+                span
+                    color: #ffffff
+                    font-family: "DINCondensed"
+                    font-size: 25px
+                    font-weight: 700
+                    letter-spacing: 0.5px
+                    display: block  
+                    padding-left: 6px 
+                    +xl
+                        font-size: 20px
+                    &.active
+                        color: #e34d45
+                        font-family: "DINCondensed"
+                        font-size: 60px
+                        font-weight: 700
+                        letter-spacing: 1.2px
+                        +xl
+                            font-size: 50px
+            .salon-list
+                display: flex
+                align-items: center 
+                position: absolute
+                left: 100px 
+                bottom: 50px
+                +xl
+                    left: 20px  
+                .arrow
+                    background: url("../img/salon-navig.png") center no-repeat
+                    background-size: cover
+                    width: 102px
+                    height: 101px
+                    display: block
+                .text
+                    color: #ffffff
+                    font-family: 'Gilroy-Medium'
+                    font-size: 12px
+                    font-weight: 300
+                    line-height: 16px
+                    letter-spacing: 0.24px
+                    +xl
+                        max-width: 60%
+        .tab-content
+            position: relative  
+            .salon-slider     
+                padding-bottom: 28px        
+            .salon-circle
+                width: 38px
+                height: 38px
+                margin: 0 auto
+                position: relative
+                display: block
+                border-radius: 50%
+                &.active
+                    &:after
+                        content: ""
+                        display: block
+                        width: 8px
+                        position: absolute
+                        bottom: -20px
+                        left: 15px
+                        border-radius: 50%
+                        height: 8px
+                        background-color: #ffffff
+                &.yellow
+                    background-color: #ffdb1b
+                &.red
+                    background-color: #cf3c33
+                &.orange
+                    background-color: #f3a619
+                &.blue
+                    background-color: #3031e5
+                &.green
+                    background-color: #008000
+                &.black
+                    background-color: #181715
+                &.gray
+                    background-color: #959595
+                &.purple
+                    background-color: #e84af1
+        .salon-navig
+            width: 100%
+            display: flex
+            justify-content: space-between
+            position: absolute
+            top: 12px
+            left: 0
+            .salon-left
+                position: relative
+                right: 10px
+                z-index: 999
+                cursor: pointer
+                transition: .4s ease
+                &:focus
+                    outline: none
+                &:hover
+                    transform: scale(1.1)  
+            .salon-right
+                cursor: pointer
+                position: relative
+                left: 10px  
+                z-index: 999  
+                transition: .4s ease
+                &:focus
+                    outline: none
+                &:hover
+                    transform: scale(1.1)  
+        .salon-menu
+            margin-bottom: 29px
+            ul
+                list-style-type: none
+                padding: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: 0
+                li
+                    display: inline-block
+                    margin-right: 5px
+                    &:hover
+                        border-radius: 5px
+                        background: #000
+                        a
+                            color: #ffffff
+                    &.active
+                        border-radius: 5px
+                        background-color: #000000
+                        a
+                            color: #ffffff
+                    a
+                        color: rgba(#ffffff,.7)
+                        font-family: 'DINCondensed'	
+                        font-size: 25px
+                        font-weight: 700
+                        display: block
+                        padding: 5px 10px
+                        text-decoration: none
+                        text-transform: uppercase
+                        /* Text style for "Дополнител" */
+                        letter-spacing: 0.5px
+                        +xl
+                            font-size: 21px

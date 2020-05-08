@@ -1,0 +1,141 @@
+extends templates/layout
+
+block main
+    .mobile
+        .mobile-item
+            .mobile-logo MOBI
+            .mobile-bg.dark
+                .mobile-container
+                    .main-overlay
+                        .main-pop
+                            .main-block
+                                .main-title Добавление контакта
+                                .main-close
+                            .main-group
+                                .main-desc Имя
+                                .main-info
+                                    input(type="text",placeholder="Введите сотовый").pop-input
+                            .main-group
+                                .main-desc Ник в игре
+                                .main-info
+                                    input(type="text",placeholder="Введите сотовый").pop-input
+                            .main-group
+                                .main-desc Номер телефона
+                                .main-info
+                                    input(type="number",placeholder="Введите сотовый").pop-input
+                            .main-docs
+                                a(href="").main-btn Удалить  
+                                a(href="").main-button  Заблокировать  
+                    .mobile-row
+                        .mobile-inner
+                            a(href="").mobile-back
+                                img(src="img/mobile-arrow-back.svg", alt="mobile-arrow-back")
+                            .mobile-lead Контакты    
+                        .mobile-add
+                    .mobile-tabs
+                        ul
+                            li
+                                a(href="").active Все
+                            li
+                                a(href="")   Вызовы
+                            li
+                                a(href="") Пропущенные
+                    .mobile-group.indent
+                        .mobile-all 
+                            .mobile-avatar.first
+                            .mobile-sms
+                                .mobile-information
+                                    .mobile-saves
+                                        .mobile-subtitle Такси
+                                        .star
+                                    .mobile-dates Еще не было вызовов
+                                .mobile-information
+                                    .mobile-subdesc Сотовый
+                        .mobile-all 
+                            .mobile-avatar.second
+                            .mobile-sms
+                                .mobile-information
+                                    .mobile-saves
+                                        .mobile-subtitle Полиция
+                                        .star
+                                    .mobile-dates Еще не было вызовов
+                                .mobile-information
+                                    .mobile-subdesc Сотовый
+                        .mobile-all 
+                            .mobile-avatar.three
+                            .mobile-sms
+                                .mobile-information
+                                    .mobile-saves
+                                        .mobile-subtitle Скорая помощь
+                                        .star
+                                    .mobile-dates Еще не было вызовов
+                                .mobile-information
+                                    .mobile-subdesc Сотовый
+                        .mobile-all 
+                            .mobile-avatar.four         
+                            .mobile-sms
+                                .mobile-information
+                                    .mobile-saves
+                                        .mobile-subtitle Пожарная служба
+                                        .star
+                                    .mobile-dates Еще не было вызовов
+                                .mobile-information
+                                    .mobile-subdesc Сотовый
+                        .mobile-all 
+                            .mobile-avatar.five
+                            .mobile-sms
+                                .mobile-information
+                                    .mobile-saves
+                                        .mobile-subtitle Эвакуатор
+                                        .star
+                                    .mobile-dates Еще не было вызовов
+                                .mobile-information
+                                    .mobile-subdesc Сотовый
+
+                        .mobile-all 
+                            .mobile-avatar L
+                            .mobile-sms
+                                 .mobile-information
+                                    .mobile-subtitle Loloshka
+                                    .mobile-dates Вторник
+                                 .mobile-information
+                                    .mobile-subdesc Сотовый
+                        .mobile-all 
+                            .mobile-avatar S
+                            .mobile-sms
+                                 .mobile-information
+                                    .mobile-saves
+                                        .mobile-subtitle Stepout
+                                        .miss
+                                    .mobile-dates 14 августа
+                                 .mobile-information
+                                    .mobile-subdesc Сотовый
+                        .mobile-all 
+                            .mobile-avatar X
+                            .mobile-sms
+                                 .mobile-information
+                                    .mobile-subtitle Xakers.li
+                                    .mobile-dates 13 августа
+                                 .mobile-information
+                                    .mobile-subdesc Сотовый
+                        .mobile-all 
+                            .mobile-avatar H
+                                .online
+                            .mobile-sms
+                                 .mobile-information
+                                    .mobile-saves
+                                        .mobile-subtitle Hedostup
+                                        .miss   
+                                    .mobile-dates 13 августа
+                                 .mobile-information
+                                    .mobile-subdesc Сотовый
+
+                .mobile-box
+                    .mobile-phone
+                        span.mobile-span 2
+                    .mobile-message
+                        span.mobile-span 2
+                    .mobile-local 18:30
+                    .mobile-network    
+                    .mobile-battery
+

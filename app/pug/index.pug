@@ -1,0 +1,24 @@
+extends templates/layout
+
+block main
+    .main
+        .main-item
+            a(href="/")
+                img(src="img/main-logo.png", alt="main-logo").main-logo
+            form().main-form
+                .form-box
+                    h2.form-title ЛОГИН
+                    input(type="text",placeholder="Введите логин").form-input
+                .form-box       
+                    h2.form-title ПАРОЛЬ
+                    input(type="text",placeholder="Введите пароль").form-input
+                .form-group
+                    button(type="submit").form-button ВОЙТИ В АККАУНТ
+                        img(src="img/arrow.svg", alt="arrow").form-arrow
+                    a(href="").form-link Забыли пароль ?
+                .form-block
+                    .form-inner
+                        a(href="").form-btn АВТОРИЗАЦИЯ
+                    .form-inner
+                        a(href="").form-btn РЕГИСТРАЦИЯ
+        

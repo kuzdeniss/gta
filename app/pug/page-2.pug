@@ -1,0 +1,66 @@
+extends templates/layout
+
+block main
+    .main 
+        .profile-item
+            .profile-boxes
+                .profile-info
+                    .profile-subtitle ДАТА СОЗДАНИЯ
+                    .profile-date  09.09.2019 В 19:09
+                .profile-info
+                    .profile-subtitle ЧАСОВ В ИГРЕ
+                    .profile-date 12 ч. 45 мин. 5 сек.
+            a(href="/")
+                img(src="img/main-logo.png", alt="main-logo").main-logo
+            form().profile-form
+                h2.profile-title Nikita_Shender
+                .profile-line
+                .profile-container
+                    .profile-block
+                        .profile-text
+                            p УРОВЕНЬ
+                        .profile-desc
+                            p 02
+                    .profile-block
+                        .profile-text
+                            p ОПЫТ
+                        .profile-desc
+                            p 03/15
+                    .profile-block
+                        .profile-text
+                            p ФРАКЦИЯ
+                        .profile-desc
+                            p ПОЛИЦЕЙСКИЙ
+                    .profile-block
+                        .profile-text
+                            p НАЛИЧНЫЕ
+                        .profile-desc
+                            p $344 984
+                    .profile-block
+                        .profile-text
+                            p СЧЁТ В БАНКЕ
+                        .profile-desc
+                            p $9 421 344 984
+                .profile-enter
+                    button.profile-button#profile-button ВЫБРАТЬ ДАННОГО ПЕРСОНАЖА
+                    button.profile-cart 
+                        img(src="img/cart.svg", alt="cart").profile-icon
+        .swiper-container.profile-slider
+            .swiper-wrapper
+                .swiper-slide   
+                    .profile-slide
+                        img(src="img/person.png", alt="person").profile-img
+                .swiper-slide   
+                    .profile-slide
+                        img(src="img/person.png", alt="person").profile-img
+                .swiper-slide   
+                    .profile-slide
+                        img(src="img/person.png", alt="person").profile-img
+        .profile-navig
+            .profile-subhead ВЫБОР ПЕРСОНАЖА
+            img(src="img/arrow-prev.svg", alt="").profile-prev.swiper-button-next
+            .swiper-pagination
+            img(src="img/arrow-next.svg", alt="").profile-next.swiper-button-prev
+
+
+                

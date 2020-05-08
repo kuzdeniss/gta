@@ -1,0 +1,55 @@
+extends templates/layout
+
+block main
+    .station
+        .station-bg
+            .station-item
+                .logo
+                .station-box
+                    .station-block
+                        .station-inner
+                            .title КОЛ-ВО НУЖНОГО<br>ТОПЛИВА (ГАЛЛ.)
+                            .station-out
+                                input(type="number" value="10").station-input
+                                .station-arrow
+                                    .left -
+                                    .right +
+                        .station-group
+                            .station-boxes
+                                .station-main
+                                    .station-amount
+                                        span 0
+                                        span 0
+                                        span 3
+                                        span 4
+                                    .station-point .
+                                    .station-amount
+                                        span 0
+                                        span 0
+                                .station-text ДОЛЛАР.
+                            .station-boxes
+                                .station-main
+                                    .station-amount
+                                        span 0
+                                        span 1
+                                    .station-point .
+                                    .station-amount
+                                        span 0
+                                        span 0
+                                .station-text ГАЛЛ.
+                    .station-info
+                        .station-more
+                            button.station-cart КАРТА
+                            button.station-cash НАЛИЧНЫЕ
+                        .station-order
+                            .station-subdesc 340$
+                            button.station-button ОПЛАТИТЬ
+                    .station-widget     
+                        .station-progress
+                            .active
+                        .station-bankomat
+                            .line
+                            .card
+
+
+                    

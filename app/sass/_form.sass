@@ -1,0 +1,136 @@
+.form
+    &-title
+        font-family: 'MullerBold'
+        color: #ffffff
+        display: block
+        font-size: 16px
+        line-height: 16px
+        +sm
+            font-size: 14px
+        &:before
+            content: ""
+            display: inline-block
+            width: 35px
+            height: 2px
+            background: #FF3E3E
+            vertical-align: middle
+            margin-right: 11px
+    &-input
+        display: block
+        border: none
+        width: 100%
+        height: 70px
+        z-index: 10
+        position: relative
+        background: #121010
+        padding-left: 30px
+        font-size: 16px
+        color: rgba(#ffffff,0.5)
+        margin: 17px 0 33px 0
+        transition: .4s ease
+        +sm
+            height: 60px
+            font-size: 14px
+        &::placeholder
+            color: rgba(#ffffff,0.1)
+        &:focus
+            background: #0e0d0d
+    &-group
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 12px
+        +sm
+            flex-direction: column
+            align-items: flex-start
+    &-link
+        font-family: 'MullerMedium'
+        font-size: 16px
+        display: block
+        line-height: 20px
+        position: relative
+        color: #3C383C
+        margin-right: 44px
+        text-decoration: none
+        cursor: pointer
+        transition: .2s ease
+        border-bottom: 1px solid #3C383C
+        +sm
+            padding-top: 20px
+            font-size: 15px
+        &:hover
+            color: #8c8c8c
+            border-bottom: 1px solid #8c8c8c
+
+
+    &-button
+        width: 250px
+        height: 65px
+        background: #F63C3C
+        display: flex
+        align-items: center
+        justify-content: center
+        font-family: 'MullerBold'
+        border: none
+        font-size: 14px
+        color: #FFFFFF
+        box-shadow: 0px 10px 65px rgba(178, 44, 44, 0.45)
+        transition: .4s ease
+        &:hover .form-arrow
+            transform: translateX(4px)
+
+    &-arrow
+        transition: .4s ease
+        margin-left: 9px
+        width: 25px
+    &-block
+        margin-top: 75px
+        display: flex
+        position: relative
+        &:after
+            content: ""
+            display: block
+            width: 1px
+            height: 100%
+            position: absolute
+            left: 50%
+            transform: translate(-50%,0)
+            background: #211D1D
+    &-inner
+        width: 100%
+        height: 80px
+        background: #121010
+        box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+        +sm
+            height: 60px
+    &-btn
+        font-size: 14px
+        line-height: 14px
+        color: #433A3A
+        height: 80px
+        // width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: 'MullerBold'
+        text-decoration: none
+        position: relative
+        +sm
+            height: 60px
+            font-size: 13px
+        &:hover
+            color: #ffffff
+            background: #0e0d0d
+            
+        &:hover:after
+            opacity: 1
+        &:after
+            content: ""
+            transition: .2s ease    
+            width: 107px
+            height: 2px
+            top: 50px
+            opacity: 0
+            position: absolute
+            background: red
+            box-shadow: 0px 2px 25px rgba(246, 60, 60, 0.35)

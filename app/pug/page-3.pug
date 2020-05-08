@@ -1,0 +1,96 @@
+extends templates/layout
+
+block main
+    .main
+        .profile-create
+            h4.profile-titles Создание персонажа
+            .profile-subtext
+                p Художественная видимость монотонно начинает стиль, однако само по себе состояние игры всегда амбивалентно.
+            .profile-block
+                .profile-text
+                    p МАМА
+                .profile-desc
+                    p ВАСЕЛИСА
+
+            .profile-block
+                .profile-text
+                    p ПАПА
+                .swiper-container.profile-slider--small
+                    .swiper-wrapper
+                        .swiper-slide   
+                            .profile-desc.text-c
+                                p EDYSON
+                        .swiper-slide   
+                            .profile-desc.text-c
+                                p KLIMER
+                    img(src="img/arrow-right.svg", alt="arrow-right").profile-arrow--right
+                    img(src="img/arrow-left.svg", alt="arrow-left").profile-arrow--left
+            .profile-block
+                .profile-text
+                    p ВНЕШНИЙ ВИД
+                .profile-progress
+                    .profile-linear
+                        .profile-step-1(style="width: 77px")
+                    .profile-linear
+                        .profile-step-2(style="width: 77px")
+            .profile-block
+                .profile-text
+                    p ЦВЕТ КОЖИ
+                .swiper-container.profile-slider--small
+                    .swiper-wrapper
+                        .swiper-slide   
+                            .profile-desc.text-c
+                                p СВЕТЛЫЙ
+                        .swiper-slide   
+                            .profile-desc.text-c
+                                p ТЕМНЫЙ
+                    img(src="img/arrow-right.svg", alt="arrow-right").profile-arrow--right
+                    img(src="img/arrow-left.svg", alt="arrow-left").profile-arrow--left
+            .profile-enter
+                button.profile-button.profile-button--right ПРОДОЛЖИТЬ
+                button.profile-btn ОТМЕНИТЬ
+        .swiper-container.profile-slider
+            .swiper-wrapper
+                .swiper-slide   
+                    .profile-slide
+                        img(src="img/person.png", alt="person").profile-img
+                .swiper-slide   
+                    .profile-slide
+                        img(src="img/person.png", alt="person").profile-img
+                .swiper-slide   
+                    .profile-slide
+                        img(src="img/person.png", alt="person").profile-img
+        .profile-navig
+            .profile-subhead ВЫБОР ПЕРСОНАЖА
+            img(src="img/arrow-prev.svg", alt="").profile-prev.swiper-button-next
+            .swiper-pagination
+            img(src="img/arrow-next.svg", alt="").profile-next.swiper-button-prev
+        .profile-change
+            .profile-head Индивидуальное<br>создание формы тела
+            .profile-board
+                .profile-more.text-c КОНЧИК ВВЕРХ
+                .profile-more.text-r СКОС ВПРАВО
+                .profile-more.text-l СКОС ВЛЕВО
+                .profile-area
+                    .profile-rectangle
+    
+                    .profile-rectangle(tabindex="-1")
+                        img(src="img/rect.png", alt="").profile-image
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                    .profile-rectangle
+                .profile-more.text-c КОНЧИК ВНИЗ
+
+
+                

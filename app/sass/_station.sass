@@ -1,0 +1,614 @@
+.station
+    &-bg
+        background: url("../img/station-bg.png") center no-repeat
+        background-size: cover
+        width: 100%
+        height: 100vh
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &.car
+            background: url("../img/station-bg-cart.png") center no-repeat
+            background-size: cover
+            display: block
+        .station-change
+            position: absolute
+            bottom: 60px
+            width: 430px   
+            left: 50%
+            transform: translate(-50%,0)
+            +xl
+                bottom: 40px
+        .station-container
+            max-width: 100%
+            margin: 0 100px  
+            +xl
+                margin: 0 50px
+            .station-center
+                display: flex
+                height: 100vh
+                justify-content: space-between
+                align-items: center
+            .station-boxes
+                .station-top
+                    margin-bottom: 29px
+                    .block
+                        width: 300px
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        .desc 
+                            color: #ffffff
+                            font-family: "DINCondensed"
+                            font-size: 28px
+                            font-weight: 700
+                            letter-spacing: 0.56px
+                        .box
+                            display: flex
+                            align-items: center
+                            .title
+                                color: #ffffff
+                                font-family: "DINCondensed"
+                                font-size: 28px
+                                font-weight: 700
+                                letter-spacing: 0.56px
+                            .text
+                                color: #ffffff
+                                font-family: "DINCondensed"
+                                font-size: 14px
+                                padding-left: 6px
+                                font-weight: 700
+                                letter-spacing: 0.28px
+                    .progress
+                        width: 299px
+                        height: 5px
+                        margin: 7px 0 9px 0
+                        border-radius: 3px
+                        background-color: rgba(#020202,0.4)
+                        position: relative
+                        .linear
+                            display: block
+                            position: absolute
+                            height: 5px
+                            border-radius: 3px
+                            background-color: #ffffff
+                            top: 0
+                            left: 0
+                            &.percent-10
+                                width: 10%
+                            &.percent-20
+                                width: 20%
+                            &.percent-30
+                                width: 30%
+                            &.percent-40
+                                width: 40%
+                            &.percent-50
+                                width: 50%
+                            &.percent-60
+                                width: 60%
+                            &.percent-70
+                                width: 70%
+                            &.percent-80
+                                width: 80%
+                            &.percent-90
+                                width: 90%
+                            &.percent-100
+                                width: 100%
+                    .part
+                        display: flex
+                        justify-content: space-between
+                        span
+                            display: block
+                            &:nth-child(odd)
+                                width: 5px
+                                height: 14px
+                                border-radius: 3px
+                                background-color: #ffffff
+                            &:nth-child(even)
+                                width: 5px
+                                height: 7px
+                                border-radius: 3px
+                                background-color: #ffffff
+
+
+            .station-details
+                .subtitle
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 40px
+                    font-weight: 700
+                    text-transform: uppercase
+                    letter-spacing: 0.87px
+                    +xl
+                        font-size: 25px
+                .title
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 120px
+                    font-weight: 700
+                    text-transform: uppercase
+                    letter-spacing: 2.4px
+                    padding-top: 10px
+                    +xl
+                        font-size: 80px
+                .price
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 80px
+                    font-weight: 700
+                    padding-top: 60px
+                    /* Text style for "600.000$" */
+                    letter-spacing: 1.74px
+                    +xl
+                        font-size: 60px
+                button
+                    color: #ffffff
+                    font-family: "DIN Condensed"
+                    font-size: 30px
+                    font-weight: 700
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 139px
+                    height: 52px
+                    line-height: 52px
+                    border-radius: 5px
+                    background-color: #e34d45
+                    border: none
+                    letter-spacing: 1.5px
+                    transition: .4s ease
+                    &:hover
+                        background: #bd2921 
+                        transform: translateY(-2px)
+            .station-pagination
+                position: absolute
+                right: 100px
+                bottom: 50px
+                display: flex
+                align-items: center
+                +xl
+                    right: 50px
+                span
+                    color: #ffffff
+                    font-family: "DINCondensed"
+                    font-size: 25px
+                    font-weight: 700
+                    letter-spacing: 0.5px
+                    display: block  
+                    padding-left: 6px 
+                    &.active
+                        color: #e34d45
+                        font-family: "DINCondensed"
+                        font-size: 60px
+                        font-weight: 700
+                        letter-spacing: 1.2px
+            .station-list
+                display: flex
+                align-items: center 
+                position: absolute
+                left: 100px 
+                bottom: 50px
+                +xl
+                    left: 50px  
+                .arrow
+                    background: url("../img/station-navig.png") center no-repeat
+                    background-size: cover
+                    width: 102px
+                    height: 101px
+                    display: block
+                .text
+                    color: #ffffff
+                    font-family: 'Gilroy-Medium'
+                    font-size: 12px
+                    font-weight: 300
+                    line-height: 16px
+                    letter-spacing: 0.24px
+                    +xl
+                        max-width: 60%
+        .tab-content
+            position: relative  
+            .station-slider     
+                padding-bottom: 28px        
+            .station-circle
+                width: 38px
+                height: 38px
+                margin: 0 auto
+                position: relative
+                display: block
+                border-radius: 50%
+                &.active
+                    &:after
+                        content: ""
+                        display: block
+                        width: 8px
+                        position: absolute
+                        bottom: -20px
+                        left: 15px
+                        border-radius: 50%
+                        height: 8px
+                        background-color: #ffffff
+                &.yellow
+                    background-color: #ffdb1b
+                &.red
+                    background-color: #cf3c33
+                &.orange
+                    background-color: #f3a619
+                &.blue
+                    background-color: #3031e5
+                &.green
+                    background-color: #008000
+                &.black
+                    background-color: #181715
+                &.gray
+                    background-color: #959595
+                &.purple
+                    background-color: #e84af1
+        .station-navig
+            width: 100%
+            display: flex
+            justify-content: space-between
+            position: absolute
+            top: 12px
+            left: 0
+            .station-left
+                position: relative
+                right: 10px
+                z-index: 999
+                cursor: pointer
+                transition: .4s ease
+                &:focus
+                    outline: none
+                &:hover
+                    transform: scale(1.1)  
+            .station-right
+                cursor: pointer
+                position: relative
+                left: 10px  
+                z-index: 999  
+                transition: .4s ease
+                &:focus
+                    outline: none
+                &:hover
+                    transform: scale(1.1)  
+        .station-menu
+            margin-bottom: 29px
+            ul
+                list-style-type: none
+                padding: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                margin: 0
+                li
+                    display: inline-block
+                    margin-right: 5px
+                    &:hover
+                        border-radius: 5px
+                        background: #000
+                        a
+                            color: #ffffff
+                    &.active
+                        border-radius: 5px
+                        background-color: #000000
+                        a
+                            color: #ffffff
+                    a
+                        color: rgba(#ffffff,.7)
+                        font-family: 'DINCondensed'	
+                        font-size: 25px
+                        font-weight: 700
+                        display: block
+                        padding: 5px 10px
+                        text-decoration: none
+                        text-transform: uppercase
+                        /* Text style for "Дополнител" */
+                        letter-spacing: 0.5px
+
+    &-item
+        background: url("../img/station-item-bg.png") center no-repeat
+        background-size: cover
+        width: 672px
+        display: block
+        height: 499px
+        margin-right: 200px
+        position: relative
+        .logo
+            position: absolute
+            left: 50.5%
+            transform: translate(-50.5%,0)
+            top: 22px
+            width: 83px
+            height: 50px
+            background: url("../img/station-logo.png") center no-repeat
+            background-size: contain
+        .station-box
+            width: calc(100% - 60px)
+            margin: 0 auto  
+            position: relative
+            padding: 63px 49px 48px 54px
+            margin-top: 90px
+            border-radius: 25px
+            background-color: #1e1e1e
+            background-image: linear-gradient(to top, rgba(23, 22, 22, 0.75) 0%, rgba(23, 22, 22, 0) 100%)
+            .station-block
+                display: flex
+                justify-content: space-between
+            .station-widget
+                display: flex
+                justify-content: space-between
+                overflow: hidden        
+                top: 65px
+                position: absolute
+                top: calc(100% + 22px)                   
+                width: 509px                
+                height: 170px   
+                .station-progress
+                    width: 330px
+                    height: 4px
+                    margin-top: 13px
+                    border-radius: 2px
+                    background-color: #222121
+                    position: relative
+                    .active
+                        position: absolute
+                        left: 0
+                        width: 189px 
+                        height: 4px  
+                        border-radius: 2px
+                        background-color: #519a40
+                        top: 0
+                .station-bankomat
+                    width: 126px
+                    height: 30px
+                    border-radius: 5px
+                    background-color: #222121
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    position: relative
+                    &:before
+                        content: ""
+                        width: 126px
+                        height: 15px
+                        background: #222121
+                        z-index: 10
+                        border-top-left-radius: 2px
+                        border-top-right-radius: 2px  
+                        position: absolute
+                        left: 0
+                        top: 0
+                    &:after
+                        content: ""
+                        width: 94px
+                        height: 2px 
+                        border-radius: 2px
+                        background: #171616
+                        z-index: 10
+                        border-bottom-left-radius: 0
+                        border-bottom-right-radius: 0px
+                        position: absolute
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        top: 50%
+
+                    .card
+                        background: url("../img/station-card-red.png") center no-repeat
+                        background-size: cover
+                        display: block
+                        width: 82px
+                        position: absolute
+                        left: 50%
+                        transform: translate(-50%,0)
+                        top: 28px
+                        animation:  cart-inner 1.1s ease infinite              
+                        height: 132px
+                        &.green
+                            background: url("../img/station-card-green.png") center no-repeat
+                            background-size: cover
+                    .line
+                        width: 94px
+                        height: 4px
+                        border-radius: 2px
+                        background-color: #171616
+            .station-info
+                display: flex   
+                align-items: center
+                justify-content: space-between  
+                margin-top: 65px
+                .station-more
+                    display: flex
+                    .station-cart
+                        width: 55px
+                        margin-right: 4px   
+                        height: 24px
+                        border-radius: 5px
+                        background-color: #e34d45
+                        color: #ffffff
+                        font-family: 'Gilroy-Medium'
+                        font-size: 10px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        border: none
+                        font-weight: 500
+                        letter-spacing: 0.32px
+                        transition: .4s ease
+                        &:hover
+                            transform: translateY(-1px)
+                            background-color: #d85f58      
+
+                    .station-cash   
+                        width: 78px
+                        height: 24px
+                        border-radius: 5px
+                        background-color: #2d2d2d            
+                        color: #ffffff
+                        font-family: 'Gilroy-Medium'
+                        font-size: 10px
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        border: none
+                        font-weight: 500
+                        letter-spacing: 0.32px
+                        transition: .4s ease
+                        &:hover
+                            transform: translateY(-1px)
+                            background-color: #484747
+                .station-order
+                    display: flex
+                    align-items: center 
+                    .station-subdesc
+                        color: #ffffff
+                        font-family: 'Gilroy-Bold'
+                        font-size: 24px
+                        font-weight: 700
+                        letter-spacing: 0.48px
+                    button
+                        width: 125px
+                        height: 40px
+                        display: flex
+                        margin-left: 29px
+                        justify-content: center
+                        align-items: center
+                        border-radius: 5px
+                        background-color: #519a40   
+                        color: #ffffff
+                        font-family: 'Gilroy-Bold'
+                        font-size: 16px
+                        font-weight: 700
+                        border: none
+                        letter-spacing: 0.32px
+                        transition: .4s ease
+                        &:hover
+                            transform: translateY(-1px)
+                            background-color: #345e2a       
+
+
+            .station-group
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                .station-boxes
+                    display: flex
+                    align-items: center
+                    margin-bottom: 14px
+                    z-index: 999
+                    position: relative
+                    .station-text
+                        color: #ffffff
+                        font-family: 'Gilroy-Bold'
+                        font-size: 14px
+                        font-weight: 700
+                        width: 62px
+                        white-space: nowrap
+                        margin-left: 18px
+                        letter-spacing: 0.28px
+                    
+                    .station-main
+                        display: flex 
+                        align-items: flex-end
+                        .station-amount
+                            display: flex
+                            justify-content: center
+                            align-items: center 
+                        .station-point
+                            color: #ffffff
+                            margin-left: 4px
+                            font-family: 'Gilroy-Bold'
+                            font-size: 24px
+                            font-weight: 700
+                            letter-spacing: 0.48px      
+                        span
+                            width: 36px
+                            height: 46px
+                            border-radius: 5px
+                            margin-left: 4px
+                            color: #000000
+                            text-align: center
+                            font-family: 'Gilroy-Bold'
+                            font-size: 36px
+                            font-weight: 700   
+                            line-height: 46px
+                            letter-spacing: 0.72px
+                            background-color: #ffffff
+            .station-inner        
+                .title
+                    color: #ffffff
+                    font-family: 'Gilroy-Bold'
+                    font-size: 12px
+                    font-weight: 500
+                    line-height: 18px
+                    letter-spacing: 0.24px
+                .station-out
+                    position: relative
+                    width: 124px
+                    input
+                        background: transparent
+                        border: none
+                        width: 124px
+                        border-bottom: 2px solid #ffffff
+                        color: #ffffff
+                        font-family: 'Gilroy-Bold'
+                        font-size: 42px
+                        font-weight: 700
+                        margin-top: 10px
+                        letter-spacing: 0.84px
+                    .station-arrow
+                        display: flex
+                        position: absolute
+                        right: 0
+                        top: 50%
+                        transform: translate(0,-50%)
+                        .left
+                            width: 21px
+                            height: 21px
+                            background-color: #519a40
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            margin-right: 7px   
+                            color: #ffffff
+                            font-family: 'Gilroy-Bold'
+                            font-size: 15px
+                            border-radius: 50%
+                            font-weight: 700   
+                            letter-spacing: 0.3px
+                            transition: .4s ease
+                            cursor: pointer
+                            &:hover
+                                transform: scale(1.05)
+                                background-color: #345e2a
+                                
+                        .right
+                            width: 21px
+                            height: 21px
+                            background-color: #519a40
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            margin-right: 7px   
+                            color: #ffffff
+                            font-family: 'Gilroy-Bold'
+                            font-size: 15px
+                            border-radius: 50%
+                            font-weight: 700   
+                            letter-spacing: 0.3px
+                            cursor: pointer
+                            transition: .4s ease
+                            &:hover
+                                transform: scale(1.05)
+                                background-color: #345e2a
+input[type='number'] 
+    -moz-appearance: textfield
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0
+@keyframes cart-inner 
+    from
+        transform: translate(-50%,0) translateY(-1%)
+    to
+        transform: translate(-50%,0) translateY(-110%)      

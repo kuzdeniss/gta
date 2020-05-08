@@ -1,0 +1,127 @@
+extends templates/layout
+
+block main
+    .salon
+        .salon-bg
+            .salon-container
+                .salon-center
+                    .salon-details
+                        .subtitle  SUPERCAR
+                        .title ZENTORNO
+                        .price 600.000$
+                        button.salon-buy КУПИТЬ
+                    .salon-boxes
+                        .salon-top
+                            .block
+                                .desc Макс. скорость
+                                .box
+                                    .title 179
+                                    .text КМ/Ч
+                            .progress
+                                .linear.percent-60
+                            .part
+                                span
+                                span
+                                span
+                                span
+                                span
+                        .salon-top
+                            .block
+                                .desc Ускорение
+                                .box
+                                    .title 11
+                            .progress
+                                .linear.percent-70
+                            .part
+                                span
+                                span
+                                span
+                                span
+                                span
+                        .salon-top
+                            .block
+                                .desc Тяга
+                                .box
+                                    .title 27
+                            .progress
+                                .linear.percent-50
+                            .part
+                                span
+                                span
+                                span
+                                span
+                                span
+                        .salon-top
+                            .block
+                                .desc Бак
+                                .box
+                                    .title 60
+                                    .text Л
+                            .progress
+                                .linear.percent-40
+                            .part
+                                span
+                                span
+                                span
+                                span
+                                span
+                            
+                        .salon-top
+                            .block
+                                .desc Вместимость
+                                .box
+                                    .title 2
+                            .progress
+                                .linear.percent-20
+                            .part
+                                span
+                                span
+                                span
+                                span
+                                span
+                            
+
+                .salon-list   
+                    .arrow
+                    .text Используйте стрелки на клавиатуре,<br>чтобы листать.
+                .salon-pagination
+                    span.active 03
+                    span / 10
+                .salon-change
+                    .salon-menu
+                        ul      
+                            li.active
+                                a(href="")  Основной
+                            li
+                                a(href="") Дополнительный
+                    .tab-content
+                        .swiper-container.salon-slider
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .salon-circle.yellow
+                                .swiper-slide
+                                    .salon-circle.red
+                                .swiper-slide
+                                    .salon-circle.orange
+                
+                                .swiper-slide
+                                    .salon-circle.blue
+                                .swiper-slide
+                                    .salon-circle.green
+                                .swiper-slide
+                                    .salon-circle.black.active
+                    
+                                .swiper-slide
+                                    .salon-circle.gray
+                                .swiper-slide
+                                    .salon-circle.purple
+                                .swiper-slide
+                                    .salon-circle.orange
+                        .salon-navig
+                            .salon-left
+                                img(src="img/salon-arrow.svg", alt="arrow left")
+                            .salon-right
+                                img(src="img/salon-arrow-right.svg", alt="arrow right")
+                
+
+                        

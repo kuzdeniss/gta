@@ -1,0 +1,492 @@
+.profile
+    &-item
+        width: 490px
+        position: relative  
+        background: #1A1818 url("../img/item-bg.png") center no-repeat
+        height: 780px
+        right: 23%  
+        box-shadow: 0px 25px 65px rgba(11, 10, 10, 0.85)
+        overflow: hidden
+    &-create
+        width: 490px
+        position: relative  
+        background: #1A1818 url("../img/item-bg.png") center no-repeat
+        height: 650px
+        right: 23%
+        // bottom: 7%
+        padding: 50px
+        box-shadow: 0px 25px 65px rgba(11, 10, 10, 0.85)
+        overflow: hidden
+    &-subtext
+        font-size: 15px
+        line-height: 20px
+        font-family: 'MullerMedium'
+        color: #998181
+    &-titles
+        font-size: 20px
+        line-height: 20px
+        font-family: 'MullerBold'
+        text-align: center
+        text-align: left
+        color: #FFFFFF
+        &:after
+            content: ""
+            display: block
+            margin: 24px 0 22px 0
+            width: 45px
+            height: 4px
+            background: #EF3B3B
+            box-shadow: 0px 5px 35px #EC3A3A
+    &-btn
+        font-size: 14px
+        line-height: 14px
+        font-family: 'MullerBold'
+        width: 49%
+        background: #121010
+        flex: 0 0 49%
+        border: none
+        text-align: center
+        transition: .4s ease
+        color: #F23C3C
+        &:hover
+            background: #0c0c0c
+    &-change
+        width: 450px
+        position: absolute
+        background: #1A1818 url("../img/item-bg.png") center no-repeat
+        height: 500px
+        top: 150px
+        right: 250px
+        background-position: 15% 10%
+        z-index: 9999
+        box-shadow: 0px 25px 65px rgba(11, 10, 10, 0.85)
+        overflow: hidden
+        padding: 37px 62px 40px 37px
+        +xl
+            right: 0
+            top: 0
+    &-head
+        font-family: 'MullerBold'
+        font-size: 16px
+        line-height: 16px
+        color: #FFFFFF
+        display: block
+        &:after
+            content: ""
+            display: block
+            margin: 21px 0 10px 0
+            width: 45px
+            height: 4px
+            background: #EF3B3B
+            box-shadow: 0px 5px 35px #EC3A3A
+    &-form
+        margin-top: 55px
+        text-align: center
+    &-title
+        font-size: 20px
+        line-height: 20px
+        display: block
+        font-family: 'MullerBold'
+        color: #ffffff
+        text-align: center
+    &-line
+        display: block
+        width: 45px
+        height: 3px
+        background: #EF3B3B
+        margin: 24px auto 28px
+        box-shadow: 0px 5px 35px #EC3A3A
+    &-boxes
+        display: flex
+        justify-content: space-between
+        margin: 95px 50px 0 50px
+    &-subtitle
+        color: #4A4242
+        font-size: 13px
+        line-height: 18px
+        /* or 150% */
+        font-family: 'MullerBold'
+        text-align: center
+        letter-spacing: 0.056em
+    &-date
+        color: #ffffff
+        font-size: 13px
+        line-height: 18px
+        font-family: 'MullerBold'
+        text-align: center
+    &-container
+        margin: 0 50px
+    &-block
+        background: #121010
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 18px
+        height: 60px
+        padding: 0 25px 0 27px
+        position: relative
+
+        box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            left: 0
+            width: 2px
+            height: 35px
+            background: #FF3E3E
+            box-shadow: 10px 0px 45px rgba(246, 60, 60, 0.45)
+    &-text
+        font-size: 14px
+        line-height: 14px
+        font-family: 'MullerBold'
+        color: #504242
+
+    &-desc
+        font-size: 14px
+        line-height: 14px
+        font-family: 'MullerBold'  
+        color: #FFFFFF
+        text-shadow: 0px 0px 13px rgba(255, 255, 255, 0.85)
+    &-enter
+        display: flex
+        justify-content: center
+        padding-top: 20px
+    &-button
+        width: 310px
+        height: 60px
+        margin-right: 18px
+        font-size: 14px
+        display: block
+        line-height: 60px
+        font-family: 'MullerBold'
+        text-align: center
+        color: #FFFFFF
+        background: #F63C3C
+        border: none
+        box-shadow: 0px 10px 65px rgba(178, 44, 44, 0.45)
+        transition: .4s ease
+        &--right
+            margin-right: 10px
+        &:hover
+            background: #c32626
+    &-cart
+        width: 60px
+        height: 60px
+        background: #121010
+        display: block
+        border: none
+        position: relative
+        box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+        transition: .4s ease
+        &:hover
+            background: #000
+            
+    &-icon
+        // width: 18px
+        transition: .7s ease
+        height: 70px
+        position: absolute
+        left: 50%
+        top: 50%    
+        transform: translate(-50%,-50%)
+    &-slider
+        position: absolute
+        width: 25%
+        left: 58%
+        transform: translate(-58%,0)
+        bottom: 0
+        z-index: 9999 
+        &--small
+            width: 100px
+            position: absolute
+            right: 10px     
+            text-align: center        
+        +xl
+            left: 65%
+    &-navig
+        position: absolute
+        top: 53%
+        right: 270px
+        transform: translate(0,-53%)
+        +xl
+            right: 160px
+            top: 45%
+    
+    &-subhead 
+        position: absolute
+        top: -37px
+        white-space: nowrap
+        left: 50%
+        transform: translate(-50%,0)
+        font-family: 'MullerBold'
+        font-size: 12px
+        line-height: 11px
+        text-align: center
+        color: rgba(#FFFFFF,.45)
+    &-prev
+        margin-right: 50px
+        width: 40px
+    &-next
+        width: 50px 
+        margin-left: 50px
+    &-img
+        max-width: 100%
+    &-arrow
+        &--right
+            position: absolute
+            top: 50%
+            right: 0
+            cursor: pointer
+            transform: translate(0,-50%)
+            z-index: 100
+        &--left
+            cursor: pointer
+            z-index: 100
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translate(0,-50%)    
+    &-rectangle
+        border: 1px solid #272626
+        width: 75px
+        height: 75px
+        display: flex
+        justify-content: center
+        align-items: center
+        &:focus
+            display: none
+    &-progress
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-linear
+        width: 99px
+        margin-left: 5px
+        height: 4px
+        background: #272222
+        position: relative
+    &-step-1
+        display: block
+        position: absolute
+        right: 0
+        height: 4px
+        background: linear-gradient(270deg, #891C1C 0%, #F44747 100%)
+    &-step-2
+        display: block
+        position: absolute
+        left: 0
+        height: 4px
+        background: linear-gradient(270deg, #891C1C 0%, #F44747 100%)
+
+    &-image
+        cursor: pointer
+        display: block
+    &-area
+        display: flex
+        // border: 1px solid #272626
+        // margin: 0 24.5px
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        margin-left: 20px
+    &-more
+        font-size: 12px
+        line-height: 10px
+        font-family: 'MullerBold'
+        text-align: center
+        letter-spacing: 0.05em
+        padding: 15px 0
+        color: #565156
+    &-level
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &-scroll
+        display: block
+        margin: 23px auto 0px
+    &-percent
+        width: 33px
+        height: 4px
+        background: #312B2B
+        top: 7px
+        position: relative
+        &.active
+            position: relative
+            &:before
+                content: ""
+                position: absolute
+                left: 0
+                top: 0
+                width: 33px
+                height: 4px
+                background: #F23B3B
+                box-shadow: 0px 1px 10px rgba(255, 62, 62, 0.45)
+    &-point
+        border-radius: 50%
+        display: block
+        width: 12px
+        height: 12px
+        position: absolute
+        &.progress-1 
+            &:after
+                content: ""
+                display: block
+                width: 161px
+                height: 4px
+                position: absolute
+                top: 50%
+                z-index: -10
+                left: 9px  
+                transform: translate(0,-50%)
+                background: #EF3B3B
+        &.progress-2    
+            &:after
+                content: ""
+                display: block
+                // width: 157px//progress 50%
+                width: 322px//progress 100%
+                height: 4px
+                position: absolute
+                top: 50%
+                z-index: -10
+                left: 9px  
+                transform: translate(0,-50%)
+                background: #EF3B3B
+        &.begin
+            top: 50%
+            left: 0
+            transform: translate(0,-50%)
+            background: #EF3B3B
+            box-shadow: 0px 4px 25px #EF3B3B
+            cursor: pointer
+            z-index: 10     
+            &.active
+                background: #121010
+                border: 2px solid #EF3B3B
+
+        &.middle
+            background: #121010
+            border: 2px solid #312B2B
+            top: 50%
+            transform: translate(-50%,-50%)
+            left: 50%
+            cursor: pointer
+            z-index: 10
+            &.active
+                background: #EF3B3B
+                border: 4px solid rgba(239, 59, 59, 0.35)
+                &:after
+                    content: ""
+                    display: block
+                    width: 4px
+                    height: 4px
+                    z-index: 10
+                    background: #121010
+                    border-radius: 50%
+                &:before
+                    content: ""
+                    display: block
+                    width: 20px
+                    height: 20px
+                    background: rgba( #EF3B3B,.2)
+                    position: absolute
+                    top: 50%
+                    border-radius: 50%      
+                    transform: translate(-50%,-50%)
+                    left: 50%
+
+        &.end
+            cursor: pointer
+            background: #121010
+            border: 2px solid #312B2B
+            top: 50%
+            transform: translate(0,-50%)
+            right: -1px
+            z-index: 10
+            &.active
+                background: #121010
+                border: 2px solid #EF3B3B
+    &-top
+        position: absolute  
+        display: flex
+        justify-content: space-between
+        width: 85%  
+        left: 7%
+        top: 5px
+    &-character
+        font-size: 10px
+        line-height: 10px
+        color: #FFFFFF
+        font-family: 'MullerMedium'
+
+
+    &-bar
+        width: 334px
+        position: relative
+        height: 4px
+        top: 7px
+        background: #312B2B
+    &-back
+        font-size: 16px
+        line-height: 16px
+        font-family: 'MullerBold'
+        color: rgba(#FFFFFF,.25)
+        margin-top: 35px
+        display: block
+        text-decoration: none 
+        &:hover  
+            color: rgba(#FFFFFF,.28)
+        &:hover:before
+            transform: translateX(-2px)
+        &:before
+            content: ""
+            display: inline-block
+            transition: .4s ease
+            background: url("../img/arrow-back.svg") center no-repeat
+            width: 37px
+            height: 20px
+            margin-right: 10px
+            vertical-align: middle
+            background-size: contain  
+.text-c 
+    text-align: center
+.text-r
+    text-align: center
+    transform: rotate(90deg)
+    position: absolute
+    right: 10px
+    top: 53%
+.text-l
+    text-align: center
+    transform: rotate(-90deg)
+    position: absolute
+    left: 10px
+    top: 53%
+	
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next
+	background: none
+	&:focus
+		outline: none
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev
+	background: none
+	&:focus
+		outline: none
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled
+	color: #F33C3C
+	opacity: 1
+.swiper-pagination
+	bottom: -25px
+	left: -30px
+	display: flex
+	font-size: 35px
+	line-height: 40px
+	text-align: center
+	font-family: 'MullerBold'
+	color: #FFFFFF
+	.swiper-pagination-total
+		color: #F33C3C
+		margin-left: 5px
+	.swiper-pagination-current
+		margin-right: 5px

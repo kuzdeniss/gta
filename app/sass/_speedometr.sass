@@ -1,0 +1,217 @@
+.speedometr
+    background: url("../img/speed-bg.png") center
+    width: 100%
+    height: 100vh
+    background-size: cover
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    &-main
+        position: relative
+        width: 365px
+        bottom: 95px
+        right: 50px 
+    &-bg
+        background: url("../img/speedometr-bg.png") center no-repeat
+        width: 365px
+        height: 334px
+        background-size: contain
+    &-ellipse
+        background: url("../img/speed-ellipse.png") center no-repeat
+        width: 117px
+        height: 60px
+        position: absolute
+        left: 48%
+        bottom: 10px
+        transform: translate(-48%,0)
+        background-size: contain   
+    &-block
+        display: flex
+        align-items: flex-end   
+        height: 110%
+        margin: 0 13px
+        justify-content: space-between
+    &-text
+        font-size: 12px
+        font-family: 'MullerMedium'
+        color: #FFFFFF 
+        &--bottom
+            position: relative
+            bottom: 26px
+    &-line
+        width: 1px
+        position: absolute
+        display: block
+        background: rgba(#ffffff,0.15)
+        &--top
+            top: 2px
+            left: 50%
+            height: 8px 
+            transform: translate(-50%,0)
+        &--left
+            top: 15px
+            left: 22px
+            height: 8px 
+            transform: rotate(-45deg)
+        &--right
+            height: 8px 
+            top: 16px
+            right: 22px
+            transform: rotate(45deg)
+    &-icon
+        display: block
+        background-size: cover
+        &--first
+            background: url("../img/speed-icon-1.svg") center no-repeat
+            width: 30px
+            height: 13px
+        &--second
+            background: url("../img/speed-icon-2.svg") center no-repeat
+            width: 28px
+            height: 28px
+            margin-right: 9px
+        &--three
+            background: url("../img/speed-icon-3.svg") center no-repeat
+            width: 21px
+            height: 21px
+        &--four
+            background: url("../img/speed-icon-4.svg") center no-repeat
+            width: 25px
+            height: 25px
+            margin-left: auto
+        &--five
+            background: url("../img/speed-icon-5.svg") center no-repeat
+            width: 24px
+            height: 24px
+        &--six
+            background: url("../img/speed-icon-6.svg") center no-repeat
+            width: 24px
+            height: 23px
+            margin-left: 9px
+    &-more
+        &--first
+            position: absolute
+            left: 50px
+            bottom: 80px
+        &--second
+            position: absolute
+            right: 50px
+            bottom: 80px
+    &-subtitle
+        font-size: 30px
+        line-height: 30px
+        font-weight: 100
+        text-align: center
+        color: #FFFFFF
+    &-nav
+        position: absolute
+        top: 50%   
+        left: 50%
+        transform: translate(-50%,-50%)
+    &-slider
+        width: 120px
+    &-content
+        position: absolute
+        top: 40px   
+        left: 50%
+        transform: translate(-50%,0)
+    &-number
+        text-align: center
+        font-size: 14px
+        text-align: center
+        color: rgba(#FFFFFF,.45)
+    &-info
+        display: flex
+        align-items: center
+        margin-top: 9px
+    &-desc
+        font-size: 14px
+        line-height: 14px
+        color: rgba(#FFFFFF,.45)
+    &-blocks
+        display: flex
+        align-items: center
+        justify-content: space-between  
+        &--1
+            position: absolute
+            width: 300px
+            bottom: 80px
+            left: 40px
+        &--2
+            position: absolute
+            width: 315px
+            bottom: 115px
+            left: 30px
+        &--3
+            position: absolute
+            width: 300px
+            bottom: 170px
+            left: 35px
+        &--4
+            position: absolute
+            width: 270px
+            bottom: 210px
+            left: 55px
+        &--5
+            position: absolute
+            width: 210px
+            bottom: 240px
+            left: 80px
+        &--6
+            position: absolute
+            width: 115px
+            bottom: 260px
+            left: 125px
+        &--7
+            position: absolute
+            left: 50%
+            top: 17px
+            transform: translate(-50%,0)
+    &-arrow
+        background: url("../img/speed-arrow-main.svg") center no-repeat
+        width: 154px
+        height: 80px
+        z-index: 1000
+        top: 80px
+        transform: rotate(10deg )
+        left: 20px
+        display: block
+        position: absolute
+        transform-origin: bottom center
+        &--small
+            background: url("../img/speed-arrow-small.svg") center no-repeat
+            width: 50px
+            height: 32px
+            z-index: 1000
+            display: block
+            position: absolute  
+            left: 0    
+            margin: auto   
+            transform: rotate(-45deg )   
+            right: 0 
+            top: 20px     
+            transform-origin: bottom center
+            background-size: cover !important
+    &-speed
+        background: url("../img/speed-linear.svg") center no-repeat
+        width: 290px
+        position: absolute
+        top: 65%
+        left: 45%
+        transform: translate(-45%,-65%)
+        height: 250px  
+
+    &-navig
+        width: 100% 
+.arrow-left
+    top: 12px
+    left: 0
+    position: absolute
+    z-index: 100
+    cursor: pointer
+.arrow-right
+    top: 7px
+    z-index: 100
+    cursor: pointer
+    right: 0
+    position: absolute

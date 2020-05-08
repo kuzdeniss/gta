@@ -1,0 +1,235 @@
+.contents
+    &-main
+        width: 1224px
+        height: 780px
+        background: url("../img/contents-bg.png") center no-repeat
+        padding: 44px 50px 52px 41px
+        display: flex
+        +xl
+            width: 1190px
+        .contents-nav
+            &:before
+                content: ""
+                display: block
+                border-top: 1px solid #242020
+                margin: 30px 0 15px 0
+            ul
+                list-style-type: none
+                padding: 0
+                margin: 0
+                li
+                    display: block
+                    margin-bottom: 6px
+                    a
+                        font-size: 14px
+                        line-height: 14px
+                        display: flex
+                        align-items: center
+                        text-decoration: none
+                        padding: 15px 0 15px 20px
+                        color: #4D4C4C
+                        &.active
+                            color: #FFFFFF
+                            background: rgba(#ffffff,.03)
+                            position: relative
+                            &:before
+                                content: ""
+                                display: block
+                                position: absolute
+                                width: 3px
+                                top: 0
+                                left: 0
+                                height: 100%
+                                background: #F63C3C
+                        .contents-icon
+                            width: 18px
+                            height: 18px
+                            background-size: contain
+                            margin-right: 10px
+                            &.home
+                                background: url("../img/contents-home.svg") center no-repeat
+                            &.transport
+                                background: url("../img/contents-tr.svg") center no-repeat
+                            &.organization
+                                background: url("../img/contents-org.svg") center no-repeat
+                            &.bysenec
+                                background: url("../img/contents-bys.svg") center no-repeat
+                            &.skill
+                                background: url("../img/contents-skill.svg") center no-repeat
+        .contents-boxes
+            display: flex
+            padding: 0 25px
+            
+        .contents-box
+            width: 300px
+            flex: 0 0 300px
+            padding: 30px 0
+            height: 100%
+            background: #121010    
+            box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+            .contents-avatar
+                background: url("../img/contents-avatar.png") center no-repeat
+                width: 50px
+                height: 50px
+                flex: 0 0 50px
+                margin-right: 12px
+                display: block
+                background-size: cover
+                position: relative
+                span
+                    width: 35px
+                    height: 17px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background: #F63C3C
+                    font-size: 9px
+                    font-family: 'MullerMedium'
+                    line-height: 17px
+                    color: #FFFFFF
+                    border-radius: 100px
+                    position: absolute
+                    left: 50%
+                    bottom: -9px
+                    transform: translate(-50%,0)
+            .contents-info
+                flex: 0 0 180px
+                padding-top: 10px       
+                .contents-title
+                    font-size: 16px
+                    line-height: 16px
+                    font-family: 'MullerMedium'
+                    padding-bottom: 15px
+                    color: #FFFFFF
+                .contents-flex
+                    padding-bottom: 12px        
+                    display: flex
+                    width: 100%
+                    justify-content: space-between
+                    align-items: center
+                .contents-desc
+                    font-size: 12px
+                    line-height: 12px
+                    color: #665555
+
+                .contents-text
+                    font-size: 12px
+                    line-height: 12px
+                    text-align: right
+                    color: #FFFFFF
+                    text-shadow: 0px 4px 45px #FFFFFF
+        .contents-item
+            margin-left: 20px
+            flex: 0 0 800px
+            .contents-head
+                font-size: 20px
+                font-family: 'MullerMedium'
+                line-height: 20px
+                color: #FFFFFF
+                padding-top: 10px
+                &:after
+                    content: ""
+                    display: block
+                    width: 35px
+                    height: 2px
+                    background: #F63C3C
+                    margin: 14px 0 28px 0   
+                    box-shadow: 0px 2px 45px #FF3E3E
+            .contents-accordion
+                margin-bottom: 30px
+                .accordion-item
+                    width: 100%
+                    height: 60px
+                    display: flex
+                    cursor: pointer
+                    padding-left: 25px
+                    align-items: center
+                    background: #121010
+                    box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+                    position: relative
+                    &.active
+                        &:after
+                            content: ""
+                            display: block
+                            background: url("../img/contents-close.svg") center no-repeat
+                            width: 19px
+                            height: 13px
+                            position: absolute
+                            right: 25px
+                            top: 50%
+                            transform: translate(0,-50%) rotate(0)
+                    &:before
+                        content: ""
+                        display: block
+                        position: absolute
+                        width: 3px
+                        top: 0
+                        left: 0
+                        height: 100%
+                        background: #F63C3C
+                    &:after
+                        content: ""
+                        display: block
+                        background: url("../img/contents-close.svg") center no-repeat
+                        width: 19px
+                        height: 13px
+                        position: absolute
+                        right: 25px
+                        top: 50%
+                        transform: translate(0,-50%) rotate(180deg)
+                    .accordion-title
+                        font-size: 14px
+                        line-height: 14px
+                        text-align: right
+                        font-family: 'MullerBold'
+                        color: #FFFFFF
+                        text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75)
+                    .accordion-icon
+                        background: url("../img/contents-icon.svg") center no-repeat
+                        width: 14px
+                        margin-left: 14px
+                        height: 18px
+                        display: block
+                .accordion-main
+                    margin: 20px 0 40px 0
+                    .accordion-box
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .accordion-boxes
+                            max-width: 385px
+                            background: #121010
+                            box-shadow: 0px 25px 45px rgba(0, 0, 0, 0.25)
+                            flex: 0 0 385px
+                            height: 60px
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            padding: 0 25px
+                            margin-bottom: 20px
+                            position: relative
+                            &:before
+                                content: ""
+                                display: block
+                                position: absolute
+                                width: 3px
+                                top: 50%
+                                transform: translate(0,-50%)
+                                box-shadow: 10px 0px 45px rgba(246, 60, 60, 0.45)
+                                left: 0
+                                height: 35px
+                                background: #F63C3C
+                            .accordion-subtitle
+                                font-size: 14px
+                                line-height: 14px
+                                display: block
+                                font-family: 'MullerBold'
+                                color: #504242
+                            .accordion-subtext
+                                font-size: 14px
+                                line-height: 14px
+                                text-align: right
+                                color: #FFFFFF
+                                text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75)
+                                font-family: 'MullerBold'
+
