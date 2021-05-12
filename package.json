@@ -14,7 +14,7 @@
     "jquery": "^3.2.1",
     "normalize.css": "^8.0.0",
     "surge": "^0.21.3",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",
